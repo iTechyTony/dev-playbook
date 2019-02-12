@@ -7,7 +7,7 @@ configure_terminal: yes
 configure_osx: yes
 
 dotfiles_repo: https://github.com/iTechyTony/dotfiles.git
-dotfiles_repo_accept_hostkey: no
+dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/Repositories/dotfiles
 dotfiles_files:
   - .ctags
@@ -19,7 +19,6 @@ dotfiles_files:
   - .php-cs-fixer
   - .tmux.conf
   - .zprofile
-  - .zshenv
   - .zshrc
 
 
@@ -29,11 +28,15 @@ homebrew_installed_packages:
   - sqlite
   - node
   - nvm
-  - php
+  - php@7.2
   - ssh-copy-id
   - readline
   - openssl
   - wget
+  - ledger
+  - mu
+  - composer
+  - node
 
 homebrew_taps:
   - homebrew/core
@@ -50,6 +53,7 @@ homebrew_cask_apps:
   - slack
   - transmit
   - vagrant
+  - mactex
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
@@ -65,6 +69,11 @@ composer_packages:
   - name: laravel/installer
   - name: laravel/valet
   - name: laravel/lumen-installer
+  - name: phpunit/phpunit
+  - name: phing/phing
+  - name: phpmd/phpmd
+  - name: squizlabs/php_codesniffer
+  - name: phpstan/phpstan
 
 
 gem_packages: []
