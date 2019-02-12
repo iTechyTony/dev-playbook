@@ -1,4 +1,4 @@
-# itechytony/mac-development-ansible-playbook
+# itechytony/mac-dev-playbook
 
 This playbook installs and configures most of the software I use on my Mac for web and software development.
 
