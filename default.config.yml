@@ -3,8 +3,8 @@ downloads: ~/.ansible-downloads/
 
 configure_dotfiles: yes
 configure_sudoers: yes
-configure_terminal: yes
-configure_osx: yes
+configure_terminal: no
+configure_osx: no
 
 dotfiles_repo: https://github.com/iTechyTony/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
@@ -37,6 +37,7 @@ homebrew_installed_packages:
   - mu
   - composer
   - node
+  - go
 
 homebrew_taps:
   - homebrew/core
@@ -67,23 +68,39 @@ osx_script: "~/.osx --no-restart"
 # installed, eg. through homebrew.
 composer_packages:
   - name: laravel/installer
+    state: present
+  #   version: "~> 1.15.1" # default: N/A
   - name: laravel/valet
+    state: present
   - name: laravel/lumen-installer
+    state: present
   - name: phpunit/phpunit
+    state: present
   - name: phing/phing
+    state: present
   - name: phpmd/phpmd
+    state: present
   - name: squizlabs/php_codesniffer
+    state: present
   - name: phpstan/phpstan
+    state: present
 
 
 gem_packages: []
-  # - name: bundler
+  # - name: bundle
   #   state: present # present/absent/latest, default: present
   #   version: "~> 1.15.1" # default: N/A
-npm_packages: []
-  # - name: webpack
-  #   state: present # present/absent/latest, default: present
-  #   version: "^2.6" # default: N/A
+npm_packages:
+  - name: webpack
+    state: present # present/absent/latest, default: present
+    # version: "~> 1.15.1" # default: N/A
+  - name: bower
+    state: present # present/absent/latest, default: present
+  - name: gulp
+    state: present # present/absent/latest, default: present
+  - name: grunt
+    state: present # present/absent/latest, default: present
+
 pip_packages: []
   # - name: mkdocs
   #   state: present # present/absent/latest, default: present
