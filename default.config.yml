@@ -1,7 +1,7 @@
 ---
 downloads: ~/.ansible-downloads/
 
-configure_dotfiles: yes
+configure_dotfiles: no
 configure_sudoers: yes
 configure_terminal: no
 configure_osx: no
@@ -23,21 +23,21 @@ dotfiles_files:
 
 
 homebrew_installed_packages:
+  - composer
   - git
+  - go
   - httpie
-  - sqlite
-  - node
-  - nvm
-  - php@7.2
-  - ssh-copy-id
-  - readline
-  - openssl
-  - wget
   - ledger
   - mu
-  - composer
-  - node
-  - go
+  - node@10
+  - nvm
+  - offlineimap
+  - openssl
+  - php@7.2
+  - readline
+  - sqlite
+  - ssh-copy-id
+  - wget
 
 homebrew_taps:
   - homebrew/core
@@ -50,11 +50,11 @@ homebrew_cask_apps:
   - dropbox
   - firefox
   - google-chrome
+  - mactex
   - sequel-pro
   - slack
   - transmit
   - vagrant
-  - mactex
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
@@ -84,6 +84,8 @@ composer_packages:
     state: present
   - name: phpstan/phpstan
     state: present
+  # - name: phpactor/phpactor
+  #   state: present
 
 
 gem_packages: []
@@ -95,11 +97,11 @@ npm_packages:
     state: present # present/absent/latest, default: present
     # version: "~> 1.15.1" # default: N/A
   - name: bower
-    state: present # present/absent/latest, default: present
+    state: present
   - name: gulp
-    state: present # present/absent/latest, default: present
+    state: present
   - name: grunt
-    state: present # present/absent/latest, default: present
+    state: present
 
 pip_packages: []
   # - name: mkdocs
