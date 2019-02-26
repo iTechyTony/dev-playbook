@@ -11,7 +11,8 @@ dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/Repositories/dotfiles
 dotfiles_files:
   - .ctags
-  - .emacs.d
+  # - .emacs.d
+  - .spacemacs
   - .gitconfig
   - .gitignore_global
   - .hushlogin
@@ -46,6 +47,7 @@ homebrew_taps:
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - chromedriver
+  - dbeaver-community
   - docker
   - dropbox
   - firefox
@@ -101,6 +103,8 @@ npm_packages:
   - name: gulp
     state: present
   - name: grunt
+    state: present
+  - name: tern
     state: present
 
 pip_packages: []
