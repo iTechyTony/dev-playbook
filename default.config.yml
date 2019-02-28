@@ -11,7 +11,6 @@ dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/Repositories/dotfiles
 dotfiles_files:
   - .ctags
-  # - .emacs.d
   - .spacemacs
   - .gitconfig
   - .gitignore_global
@@ -52,6 +51,7 @@ homebrew_cask_apps:
   - dropbox
   - firefox
   - google-chrome
+  - growlnotify
   - mactex
   - sequel-pro
   - slack
