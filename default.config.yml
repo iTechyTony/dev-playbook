@@ -12,6 +12,7 @@ dotfiles_repo_local_destination: ~/Repositories/dotfiles
 dotfiles_files:
   - .ctags
   - .spacemacs
+  - .spacemacs.d
   - .gitconfig
   - .gitignore_global
   - .hushlogin
