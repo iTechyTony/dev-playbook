@@ -26,6 +26,7 @@ dotfiles_files:
 homebrew_installed_packages:
   - composer
   - git
+  - global
   - go
   - httpie
   - ledger
@@ -111,6 +112,8 @@ npm_packages:
   - name: tern
     state: present
   - name: vmd
+    state: present
+  - name: js-beautify
     state: present
 pip_packages: []
   # - name: mkdocs
