@@ -1,7 +1,7 @@
 ---
 downloads: ~/.ansible-downloads/
 
-configure_dotfiles: no
+configure_dotfiles: yes
 configure_sudoers: yes
 configure_terminal: no
 configure_osx: no
@@ -10,14 +10,14 @@ dotfiles_repo: https://github.com/iTechyTony/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/Repositories/dotfiles
 dotfiles_files:
+  - .aliases
   - .ctags
-  - .spacemacs
-  - .spacemacs.d
   - .gitconfig
   - .gitignore_global
   - .hushlogin
-  - .offlineimaprc
   - .php-cs-fixer
+  - .spacemacs
+  - .spacemacs.d
   - .tmux.conf
   - .zprofile
   - .zshrc
