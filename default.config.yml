@@ -27,8 +27,10 @@ dotfiles_files:
 
 homebrew_installed_packages:
   - composer
+  - editorconfig
   - git
   - global
+  - gnu-tar
   - go
   - httpie
   - ledger
@@ -42,8 +44,7 @@ homebrew_installed_packages:
   - sqlite
   - ssh-copy-id
   - wget
-  - gnu-tar
-  - editorconfig
+  - zsh
 
 homebrew_taps:
   - homebrew/core
