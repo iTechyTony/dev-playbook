@@ -16,11 +16,10 @@ dotfiles_files:
   - .gitignore_global
   - .hushlogin
   - .php-cs-fixer
-  - .spacemacs
-  - .spacemacs.d
   - .tmux.conf
   - .zprofile
   - .zshrc
+  - .doom.d
 
 
 homebrew_installed_packages:
