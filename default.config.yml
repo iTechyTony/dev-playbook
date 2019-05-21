@@ -40,6 +40,8 @@ homebrew_installed_packages:
   - sqlite
   - ssh-copy-id
   - wget
+  - gnu-tar
+  - editorconfig
 
 homebrew_taps:
   - homebrew/core
@@ -115,6 +117,8 @@ npm_packages:
   - name: vmd
     state: present
   - name: js-beautify
+    state: present
+  - name: ember-cli
     state: present
 pip_packages: []
   # - name: mkdocs
