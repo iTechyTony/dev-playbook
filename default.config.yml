@@ -12,15 +12,17 @@ dotfiles_repo_local_destination: ~/Repositories/dotfiles
 dotfiles_files:
   - .aliases
   - .ctags
+  - .doom.d
   - .gitconfig
   - .gitignore_global
   - .hushlogin
   - .php-cs-fixer
   - .tmux.conf
-  - .zprofile
-  - .zshrc
-  - .doom.d
+  - .zlogin
   - .zpreztorc
+  - .zprofile
+  - .zshenv
+  - .zshrc
 
 
 homebrew_installed_packages:
