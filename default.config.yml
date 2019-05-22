@@ -45,6 +45,7 @@ homebrew_installed_packages:
   - ssh-copy-id
   - wget
   - zsh
+  - lastpass-cli
 
 homebrew_taps:
   - homebrew/core
@@ -58,13 +59,9 @@ homebrew_cask_apps:
   - dropbox
   - firefox
   - google-chrome
-  - growlnotify
-  - mactex
   - sequel-pro
   - slack
-  - transmit
   - vagrant
-  - lastpass-cli
   - font-fira-code
 
 # See `geerlingguy.mas` role documentation for usage instructions.
@@ -80,7 +77,6 @@ osx_script: "~/.osx --no-restart"
 composer_packages:
   - name: laravel/installer
     state: present
-  #   version: "~> 1.15.1" # default: N/A
   - name: laravel/valet
     state: present
   - name: laravel/lumen-installer
@@ -96,9 +92,11 @@ composer_packages:
   - name: phpstan/phpstan
     state: present
   - name: psy/psysh
-    state: stable
-  # - name: phpactor/phpactor
-  #   state: present
+    state: present
+  - name: laravel/envoy
+    state: present
+  - name: phpactor/phpactor
+    state: present
 
 
 gem_packages: []
