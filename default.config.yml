@@ -10,13 +10,13 @@ dotfiles_repo: https://github.com/iTechyTony/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/Repositories/dotfiles
 dotfiles_files:
-  - .aliases
+  - .aliases.zsh
   - .ctags
   - .doom.d
   - .gitconfig
   - .gitignore_global
-  - .hushlogin
   - .php-cs-fixer
+  - .hyper.js
   - .tmux.conf
   - .zlogin
   - .zpreztorc
@@ -64,6 +64,7 @@ homebrew_cask_apps:
   - slack
   - vagrant
   - font-fira-code
+  - font-office-code-pro
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
@@ -95,8 +96,6 @@ composer_packages:
   - name: psy/psysh
     state: present
   - name: laravel/envoy
-    state: present
-  - name: phpactor/phpactor
     state: present
 
 
