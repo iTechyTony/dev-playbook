@@ -29,6 +29,7 @@ homebrew_installed_packages:
   - ag
   - composer
   - editorconfig
+  - fd
   - git
   - global
   - glslang
