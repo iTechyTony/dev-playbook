@@ -28,6 +28,7 @@ dotfiles_files:
 homebrew_installed_packages:
   - ag
   - composer
+  - coreutils
   - editorconfig
   - fd
   - git
