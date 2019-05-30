@@ -31,22 +31,26 @@ homebrew_installed_packages:
   - editorconfig
   - git
   - global
+  - glslang
   - gnu-tar
   - go
   - httpie
+  - lastpass-cli
   - ledger
+  - markdown
   - mu
   - node@10
   - nvm
   - offlineimap
   - openssl
+  - pandoc
   - php@7.2
   - readline
+  - shellcheck
   - sqlite
   - ssh-copy-id
   - wget
   - zsh
-  - lastpass-cli
 
 homebrew_taps:
   - homebrew/core
@@ -59,12 +63,12 @@ homebrew_cask_apps:
   - docker
   - dropbox
   - firefox
+  - font-office-code-pro
   - google-chrome
+  - marked
   - sequel-pro
   - slack
   - vagrant
-  - font-fira-code
-  - font-office-code-pro
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
@@ -120,6 +124,8 @@ npm_packages:
   - name: js-beautify
     state: present
   - name: ember-cli
+    state: present
+  - name: sytlelint
     state: present
 pip_packages: []
   # - name: mkdocs
