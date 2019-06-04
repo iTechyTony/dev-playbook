@@ -103,6 +103,8 @@ composer_packages:
     state: present
   - name: laravel/envoy
     state: present
+  - name: friendsofphp/php-cs-fixer
+    state: present
 
 
 gem_packages: []
