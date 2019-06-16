@@ -65,6 +65,7 @@ homebrew_cask_apps:
   - dbeaver-community
   - docker
   - dropbox
+  - emacs
   - firefox
   - font-office-code-pro
   - google-chrome
