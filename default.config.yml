@@ -69,6 +69,7 @@ homebrew_cask_apps:
   - firefox
   - font-office-code-pro
   - google-chrome
+  - hyper
   - marked
   - sequel-pro
   - slack
