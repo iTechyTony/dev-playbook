@@ -1,0 +1,32 @@
+#+TITLE: itechytony/mac-dev-playbook
+
+This playbook installs and configures most of the software I use on my Mac for web and software development.
+
+* Installation
+1. Ensure Apple's command line tools are installed using the command below to launch the installer.
+   #+BEGIN_SRC shell
+ xcode-select --install
+   #+END_SRC
+2. Install Ansible [[http://docs.ansible.com/intro_installation.html ]].
+3. Clone this repository to your local drive.
+   #+BEGIN_SRC shell
+ git clone git@github.com:iTechyTony/mac-dev-playbook.git
+   #+END_SRC
+4. Run command below inside this directory to install required Ansible roles.
+   #+BEGIN_SRC shell
+ ansible-galaxy install -r requirements.yml
+   #+END_SRC
+5. Run the command below inside this directory. Enter your account password when prompted.
+   #+BEGIN_SRC shell
+ ansible-playbook main.yml -i inventory -K
+   #+END_SRC
+
+   *Note:* If some Homebrew commands fail, you might need to agree to Xcode's license or fix some other Brew issue. Run =brew doctor= to see if this is the case.
+
+** Running a specific set of tagged tasks
+
+You can filter which part of the provisioning process to run by specifying a set of tags using =ansible-playbook='s =--tags= flag. The tags available are =dotfiles=, =homebrew=, =mas=, =extra-packages= and =osx=.
+
+#+BEGIN_SRC shell
+ansible-playbook main.yml -i inventory -K --tags "dotfiles,homebrew"
+#+END_SRC
