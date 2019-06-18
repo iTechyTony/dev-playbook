@@ -15,12 +15,10 @@ dotfiles_files:
   - .doom.d
   - .gitconfig
   - .gitignore_global
-  - .php-cs-fixer
+  - .hushlogin
   - .hyper.js
+  - .php-cs-fixer
   - .tmux.conf
-  - .zlogin
-  - .zpreztorc
-  - .zprofile
   - .zshenv
   - .zshrc
 
