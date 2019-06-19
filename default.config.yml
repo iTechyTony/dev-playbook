@@ -49,6 +49,7 @@ homebrew_installed_packages:
   - shellcheck
   - sqlite
   - ssh-copy-id
+  - tmux
   - wget
   - zsh
 
