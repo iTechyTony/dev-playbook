@@ -46,6 +46,7 @@ homebrew_installed_packages:
   - pandoc
   - php@7.2
   - readline
+  - ripgrep
   - shellcheck
   - sqlite
   - ssh-copy-id
@@ -132,8 +133,6 @@ npm_packages:
   - name: js-beautify
     state: present
   - name: ember-cli
-    state: present
-  - name: sytlelint
     state: present
 pip_packages: []
   # - name: mkdocs
