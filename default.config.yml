@@ -37,6 +37,7 @@ homebrew_installed_packages:
   - httpie
   - lastpass-cli
   - ledger
+  - libvterm
   - markdown
   - mu
   - node@10
@@ -45,8 +46,11 @@ homebrew_installed_packages:
   - openssl
   - pandoc
   - php@7.2
+  - proselint
+  - pyenv
   - readline
   - ripgrep
+  - sbcl
   - shellcheck
   - sqlite
   - ssh-copy-id
@@ -113,10 +117,12 @@ composer_packages:
     state: present
 
 
-gem_packages: []
+gem_packages:
   # - name: bundle
   #   state: present # present/absent/latest, default: present
   #   version: "~> 1.15.1" # default: N/A
+  - name: mdl
+    state: present
 npm_packages:
   - name: webpack
     state: present # present/absent/latest, default: present
@@ -134,6 +140,10 @@ npm_packages:
   - name: js-beautify
     state: present
   - name: ember-cli
+    state: present
+  - name: markdownlint
+    state: present
+  - name: stylelint
     state: present
 pip_packages: []
   # - name: mkdocs
