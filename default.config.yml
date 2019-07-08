@@ -17,6 +17,7 @@ dotfiles_files:
   - .gitignore_global
   - .hushlogin
   - .hyper.js
+  - .offlineimaprc
   - .php-cs-fixer
   - .tmux.conf
   - .zshenv
