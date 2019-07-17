@@ -41,11 +41,12 @@ homebrew_installed_packages:
   - libvterm
   - markdown
   - mu
-  - node@10
+  - node
   - nvm
   - offlineimap
   - openssl
   - pandoc
+  - pass
   - php@7.2
   - proselint
   - pyenv
@@ -74,14 +75,15 @@ homebrew_cask_apps:
   - dropbox
   - emacs
   - firefox
-  - font-office-code-pro
+  - google-backup-and-sync
   - google-chrome
   - hyper
-  - marked
   - sequel-pro
+  - skype
   - slack
   - spectacle
   - vagrant
+  - whatsapp
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
