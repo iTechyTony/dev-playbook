@@ -74,6 +74,7 @@ homebrew_cask_apps:
   - docker
   - dropbox
   - emacs
+  - evernote
   - firefox
   - google-backup-and-sync
   - google-chrome
