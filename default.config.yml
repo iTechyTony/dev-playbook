@@ -31,6 +31,7 @@ homebrew_installed_packages:
   - editorconfig
   - fd
   - git
+  - git-flow
   - global
   - glslang
   - gnu-tar
