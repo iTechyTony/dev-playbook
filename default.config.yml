@@ -22,6 +22,7 @@ dotfiles_files:
   - .tmux.conf
   - .zshenv
   - .zshrc
+  - .zpreztorc
 
 
 homebrew_installed_packages:
@@ -42,8 +43,7 @@ homebrew_installed_packages:
   - libvterm
   - markdown
   - mu
-  - node
-  - nvm
+  - node@10
   - offlineimap
   - openssl
   - pandoc
