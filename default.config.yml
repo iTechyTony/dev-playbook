@@ -8,7 +8,7 @@ configure_osx: no
 
 dotfiles_repo: https://github.com/iTechyTony/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/Dotfiles
+dotfiles_repo_local_destination: ~/Repo/Dotfiles
 dotfiles_files:
   - .aliases.zsh
   - .ctags
