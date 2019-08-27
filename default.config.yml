@@ -75,7 +75,6 @@ homebrew_cask_apps:
   - docker
   - dropbox
   - emacs
-  - evernote
   - firefox
   - google-backup-and-sync
   - google-chrome
@@ -122,12 +121,10 @@ composer_packages:
     state: present
 
 
-gem_packages:
+gem_packages: []
   # - name: bundle
   #   state: present # present/absent/latest, default: present
   #   version: "~> 1.15.1" # default: N/A
-  - name: mdl
-    state: present
 npm_packages:
   - name: webpack
     state: present # present/absent/latest, default: present
@@ -146,9 +143,9 @@ npm_packages:
     state: present
   - name: ember-cli
     state: present
-  - name: markdownlint
-    state: present
   - name: stylelint
+    state: present
+  - name: intelephense
     state: present
 pip_packages: []
   # - name: mkdocs
