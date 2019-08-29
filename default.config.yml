@@ -147,10 +147,12 @@ npm_packages:
     state: present
   - name: intelephense
     state: present
-pip_packages: []
+pip_packages:
   # - name: mkdocs
   #   state: present # present/absent/latest, default: present
   #   version: "0.16.3" # default: N/A
+  - name: font-line
+    state: present
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []
