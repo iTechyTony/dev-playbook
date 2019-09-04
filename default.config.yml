@@ -26,6 +26,7 @@ dotfiles_files:
 
 
 homebrew_installed_packages:
+  - Schniz/tap/fnm
   - ag
   - composer
   - coreutils
@@ -59,7 +60,6 @@ homebrew_installed_packages:
   - tmux
   - wget
   - zsh
-  - Schniz/tap/fnm
 
 homebrew_taps:
   - homebrew/core
