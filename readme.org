@@ -10,7 +10,7 @@ This playbook installs and configures most of the software I use on my Mac for w
 2. Install Ansible [[http://docs.ansible.com/intro_installation.html ]].
 3. Clone this repository to your local drive.
    #+BEGIN_SRC shell
- git clone git@github.com:iTechyTony/mac-dev-playbook.git
+ git clone https://github.com/iTechyTony/MacPlaybook.git
    #+END_SRC
 4. Run command below inside this directory to install required Ansible roles.
    #+BEGIN_SRC shell
