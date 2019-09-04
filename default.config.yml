@@ -85,6 +85,7 @@ homebrew_cask_apps:
   - spectacle
   - vagrant
   - whatsapp
+  - insomnia
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
