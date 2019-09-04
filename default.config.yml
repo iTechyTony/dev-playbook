@@ -43,7 +43,6 @@ homebrew_installed_packages:
   - libvterm
   - markdown
   - mu
-  - node@10
   - offlineimap
   - openssl
   - pandoc
@@ -60,6 +59,7 @@ homebrew_installed_packages:
   - tmux
   - wget
   - zsh
+  - Schniz/tap/fnm
 
 homebrew_taps:
   - homebrew/core
