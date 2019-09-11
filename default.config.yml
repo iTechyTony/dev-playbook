@@ -28,6 +28,7 @@ dotfiles_files:
 homebrew_installed_packages:
   - Schniz/tap/fnm
   - ag
+  - cmake
   - composer
   - coreutils
   - editorconfig
@@ -65,6 +66,7 @@ homebrew_taps:
   - homebrew/core
   - homebrew/cask
   - homebrew/cask-fonts
+  - homebrew/cask-drivers
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -79,13 +81,14 @@ homebrew_cask_apps:
   - google-backup-and-sync
   - google-chrome
   - hyper
+  - insomnia
+  - logitech-options
   - sequel-pro
   - skype
   - slack
   - spectacle
   - vagrant
   - whatsapp
-  - insomnia
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
