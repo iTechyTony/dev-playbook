@@ -39,6 +39,7 @@ homebrew_installed_packages:
   - glslang
   - gnu-tar
   - go
+  - gtypist
   - httpie
   - lastpass-cli
   - ledger
