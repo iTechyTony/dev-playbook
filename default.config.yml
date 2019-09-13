@@ -153,6 +153,18 @@ npm_packages:
     state: present
   - name: intelephense
     state: present
+  - name: bash-language-server
+    state: present
+  - name: vscode-css-languageserver-bin
+    state: present
+  - name: dockerfile-language-server-nodejs
+    state: present
+  - name: vscode-html-languageserver-bin
+    state: present
+  - name: typescript-language-server
+    state: present
+  - name: vue-language-server
+    state: present
 pip_packages:
   # - name: mkdocs
   #   state: present # present/absent/latest, default: present
