@@ -84,6 +84,7 @@ homebrew_cask_apps:
   - hyper
   - insomnia
   - logitech-options
+  - mactex
   - sequel-pro
   - skype
   - slack
