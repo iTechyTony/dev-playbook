@@ -29,6 +29,7 @@ dotfiles_files:
 homebrew_installed_packages:
   - Schniz/tap/fnm
   - ag
+  - automake
   - cmake
   - composer
   - coreutils
@@ -52,6 +53,7 @@ homebrew_installed_packages:
   - pandoc
   - pass
   - php@7.2
+  - poppler
   - proselint
   - pyenv
   - readline
@@ -84,6 +86,7 @@ homebrew_cask_apps:
   - google-chrome
   - hyper
   - insomnia
+  - lastpass
   - logitech-options
   - mactex
   - sequel-pro
