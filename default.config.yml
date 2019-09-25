@@ -23,6 +23,7 @@ dotfiles_files:
   - .zshenv
   - .zshrc
   - .zpreztorc
+  - .zprofile
 
 
 homebrew_installed_packages:
