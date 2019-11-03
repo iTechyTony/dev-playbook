@@ -12,7 +12,7 @@ pass_repo_local_destination: ~/.password-store
 
 dotfiles_repo: https://github.com/iTechyTony/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/Repo/Dotfiles
+dotfiles_repo_local_destination: ~/Repo/2 Areas/Dotfiles
 dotfiles_files:
   - .aliases.zsh
   - .ctags
@@ -24,10 +24,7 @@ dotfiles_files:
   - .offlineimaprc
   - .php-cs-fixer
   - .tmux.conf
-  - .zshenv
   - .zshrc
-  - .zpreztorc
-  - .zprofile
 
 
 homebrew_installed_packages:
