@@ -10,6 +10,11 @@
     state: directory
   become: yes
 
+- name: Ensure ~/Repo directory exists.
+  file:
+    path: ~/Repo
+    state: directory
+
 - name: Symlink /usr/local/etc/ansible to /etc/ansible.
   file:
     src: /etc/ansible

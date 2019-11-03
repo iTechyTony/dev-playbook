@@ -1,0 +1,6 @@
+- name: Ensure password store repository is cloned locally.
+  git:
+    repo: "{{ pass_repo }}"
+    dest: "{{ pass_repo_local_destination }}"
+    accept_hostkey: "{{ pass_repo_accept_hostkey }}"
+  become: no

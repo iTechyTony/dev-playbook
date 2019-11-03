@@ -11,6 +11,9 @@
         - "{{ playbook_dir }}/config.yml"
       tags: ['always']
 
+  tasks:
+    - include_tasks: tasks/pass-repo-clonning.yml
+
   roles:
     - role: geerlingguy.homebrew
       tags: ['homebrew']

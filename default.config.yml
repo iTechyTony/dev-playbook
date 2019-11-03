@@ -6,6 +6,10 @@ configure_sudoers: yes
 configure_terminal: no
 configure_osx: no
 
+pass_repo: https://github.com/iTechyTony/password-store.git
+pass_repo_accept_hostkey: yes
+pass_repo_local_destination: ~/.password-store
+
 dotfiles_repo: https://github.com/iTechyTony/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/Repo/Dotfiles
@@ -43,7 +47,6 @@ homebrew_installed_packages:
   - go
   - gtypist
   - httpie
-  - lastpass-cli
   - ledger
   - libvterm
   - markdown
@@ -52,7 +55,7 @@ homebrew_installed_packages:
   - openssl
   - pandoc
   - pass
-  - php@7.2
+  - php
   - poppler
   - proselint
   - pyenv
@@ -77,7 +80,6 @@ homebrew_cask_apps:
   - alfred
   - appcleaner
   - chromedriver
-  - dbeaver-community
   - docker
   - dropbox
   - emacs
@@ -86,10 +88,8 @@ homebrew_cask_apps:
   - google-chrome
   - hyper
   - insomnia
-  - lastpass
   - logitech-options
   - mactex
-  - sequel-pro
   - skype
   - slack
   - spectacle
