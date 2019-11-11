@@ -42,6 +42,8 @@ homebrew_installed_packages:
   - glslang
   - gnu-tar
   - go
+  - groff
+  - gs
   - gtypist
   - httpie
   - ledger
@@ -133,9 +135,6 @@ gem_packages: []
   #   state: present # present/absent/latest, default: present
   #   version: "~> 1.15.1" # default: N/A
 npm_packages:
-  - name: webpack
-    state: present # present/absent/latest, default: present
-    # version: "~> 1.15.1" # default: N/A
   - name: bower
     state: present
   - name: gulp
