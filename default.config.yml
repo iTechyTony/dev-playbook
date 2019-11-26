@@ -16,7 +16,6 @@ dotfiles_repo_local_destination: ~/Repo/Dotfiles
 dotfiles_files:
   - .aliases.zsh
   - .ctags
-  - .doom.d
   - .gitconfig
   - .gitignore_global
   - .hushlogin
@@ -24,8 +23,8 @@ dotfiles_files:
   - .offlineimaprc
   - .php-cs-fixer
   - .tmux.conf
+  - .zshenv
   - .zshrc
-
 
 homebrew_installed_packages:
   - Schniz/tap/fnm
