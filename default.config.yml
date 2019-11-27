@@ -12,7 +12,7 @@ pass_repo_local_destination: ~/.password-store
 
 dotfiles_repo: https://github.com/iTechyTony/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/Repo/Dotfiles
+dotfiles_repo_local_destination: ~/Repo/2Areas/Dotfiles
 dotfiles_files:
   - .aliases.zsh
   - .ctags
@@ -84,6 +84,7 @@ homebrew_cask_apps:
   - firefox
   - google-backup-and-sync
   - google-chrome
+  - hyper
   - hyper
   - insomnia
   - logitech-options
