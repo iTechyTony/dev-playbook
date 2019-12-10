@@ -64,6 +64,7 @@ homebrew_installed_packages:
   - sqlite
   - ssh-copy-id
   - tmux
+  - trash
   - wget
   - zsh
 
@@ -75,6 +76,7 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - 1password
   - alfred
   - appcleaner
   - chromedriver
@@ -89,9 +91,11 @@ homebrew_cask_apps:
   - insomnia
   - logitech-options
   - mactex
+  - querious
   - skype
   - slack
   - spectacle
+  - tableplus
   - vagrant
   - whatsapp
 
