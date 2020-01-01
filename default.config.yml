@@ -15,7 +15,6 @@ dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/Repositories/2 Areas/Dotfiles
 dotfiles_files:
   - .aliases.zsh
-  - .ctags
   - .gitconfig
   - .gitignore_global
   - .hushlogin
