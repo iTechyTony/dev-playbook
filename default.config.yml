@@ -24,6 +24,7 @@ dotfiles_files:
   - .tmux.conf
   - .zshenv
   - .zshrc
+  - .emacs.d
 
 homebrew_installed_packages:
   - Schniz/tap/fnm
