@@ -8,11 +8,11 @@ configure_osx: no
 
 pass_repo: https://github.com/iTechyTony/password-store.git
 pass_repo_accept_hostkey: yes
-pass_repo_local_destination: ~/Repositories/2 Areas/password-store
+pass_repo_local_destination: ~/Repositories/2Areas/password-store
 
 dotfiles_repo: https://github.com/iTechyTony/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/Repositories/2 Areas/Dotfiles
+dotfiles_repo_local_destination: ~/Repositories/2Areas/Dotfiles
 dotfiles_files:
   - .aliases.zsh
   - .gitconfig
@@ -73,6 +73,7 @@ homebrew_taps:
   - homebrew/cask
   - homebrew/cask-fonts
   - homebrew/cask-drivers
+  - railwaycat/emacsmacport
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -99,6 +100,8 @@ homebrew_cask_apps:
   - whatsapp
   - stoplight-studio
   - spotify
+  - dbeaver
+  - emacs-mac
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
