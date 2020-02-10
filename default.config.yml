@@ -25,6 +25,7 @@ dotfiles_files:
   - .zshenv
   - .zshrc
   - .emacs.d
+  - .config/karabiner/karabiner.json
 
 homebrew_installed_packages:
   - Schniz/tap/fnm
@@ -83,25 +84,24 @@ homebrew_cask_apps:
   - chromedriver
   - docker
   - dropbox
-  - emacs
+  - emacs-mac
   - firefox
   - google-backup-and-sync
   - google-chrome
   - hyper
   - insomnia
+  - karabiner-elements
   - logitech-options
   - mactex
   - querious
   - skype
   - slack
   - spectacle
+  - spotify
+  - stoplight-studio
   - tableplus
   - vagrant
   - whatsapp
-  - stoplight-studio
-  - spotify
-  - dbeaver
-  - emacs-mac
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
