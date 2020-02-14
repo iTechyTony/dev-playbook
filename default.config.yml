@@ -22,6 +22,7 @@ dotfiles_files:
   - .tmux.conf
   - .zshenv
   - .zshrc
+  - .zpreztorc
   - .emacs.d
   - .config/karabiner/karabiner.json
 
