@@ -102,6 +102,8 @@ homebrew_cask_apps:
   - vagrant
   - whatsapp
   - zoomus
+  - 1password-cli
+  - wkhtmltopdf
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
