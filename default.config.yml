@@ -79,6 +79,7 @@ homebrew_taps:
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - 1password
+  - 1password-cli
   - alfred
   - appcleaner
   - chromedriver
@@ -86,8 +87,10 @@ homebrew_cask_apps:
   - dropbox
   - emacs-mac
   - firefox
+  - font-fira-code
   - google-backup-and-sync
   - google-chrome
+  - growlnotify
   - hyper
   - insomnia
   - karabiner-elements
@@ -102,10 +105,8 @@ homebrew_cask_apps:
   - tableplus
   - vagrant
   - whatsapp
-  - zoomus
-  - 1password-cli
   - wkhtmltopdf
-  - growlnotify
+  - zoomus
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
