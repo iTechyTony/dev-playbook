@@ -1,8 +1,13 @@
-#+TITLE: iTechyTony/MacPlaybook
+#+TITLE: iTechyTony/dev-machine-playbook
 
-This playbook installs and configures most of the software I use on my Mac for web and software development.
+This playbook installs and configures most of the software I use development.
 
-* Installation
+* Linux
+** Arch Linux
+   #+BEGIN_SRC sh
+     sudo pacman -S ansible i3
+   #+END_SRC
+* macOs
 1. Ensure Apple's command line tools are installed using the command below to launch the installer.
    #+BEGIN_SRC shell
  xcode-select --install
