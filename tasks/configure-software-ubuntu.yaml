@@ -15,6 +15,22 @@
   package:
     name: [
         'binutils',
+        'aspell',
+        'aspell-en',
+        'binutils',
+        'cmake',
+        'composer',
+        'docker',
+        'docker-compose',
+        'emacs',
+        'fish',
+        'htop',
+        'ledger',
+        'npm',
+        'offlineimap',
+        'pandoc',
+        'php',
+        'vagrant'
     ]
     state: present
 

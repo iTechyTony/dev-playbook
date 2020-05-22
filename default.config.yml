@@ -8,11 +8,11 @@ configure_osx: no
 
 pass_repo: https://github.com/iTechyTony/password-store.git
 pass_repo_accept_hostkey: yes
-pass_repo_local_destination: ~/Repo/2Areas/password-store
+pass_repo_local_destination: ~/Repo/2Areas/Personal/password-store
 
 dotfiles_repo: https://github.com/iTechyTony/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/Repo/2Areas/Dotfiles
+dotfiles_repo_local_destination: ~/Repo/Personal/2Areas/Dotfiles
 dotfiles_files:
   - .gitconfig
   - .gitignore_global
@@ -20,11 +20,12 @@ dotfiles_files:
   - .offlineimaprc
   - .php-cs-fixer
   - .tmux.conf
-  - .zshenv
-  - .zshrc
-  - .zpreztorc
   - .emacs.d
-  - .config/karabiner/karabiner.json
+  - .config/dunst
+  - .config/fish
+  - .config/i3
+  - .config/i3blocks
+  - .config/rofi
 
 homebrew_installed_packages:
   - Schniz/tap/fnm
