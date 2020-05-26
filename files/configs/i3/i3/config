@@ -10,7 +10,7 @@ new_float normal
 hide_edge_borders none
 
 # Window title font
-font xft:URWGothic-Book 14
+font xft:URWGothic-Book 16
 
 # Use Mouse+$mod to drag floating windows
 floating_modifier $mod
@@ -19,16 +19,16 @@ floating_modifier $mod
 focus_follows_mouse no
 
 # Increase key repeat
-exec --no-startup-id xset r rate 185 100
-# 185 -  delay
-# 100 - interval
+exec --no-startup-id xset r rate 185 100 # 185 -  delay # 100 - interval
+
+bindsym $mod+Ctrl+q exec xkill
 
 # change container layout (stacked, tabbed, toggle split)
-# bindsym $mod+s layout stacking
+bindsym $mod+s layout stacking
 bindsym $mod+d layout toggle split
 
-# Set screen resolution to 1920x1080
-#exec --no-startup-id xrandr --output eDP-1 --mode 1920x1080
+# Set screen resolution to DPI
+exec --no-startup-id xrandr --dpi 150
 
 # Enable touchpad natural scrolling
 #exec_always --no-startup-id xinput set-prop "DELL07E6:00 06CB:76AF Touchpad" "libinput Natural Scrolling Enabled" 1
@@ -40,21 +40,30 @@ bindsym $mod+Shift+f fullscreen toggle
 bindsym $mod+space --release exec "rofi -combi-modi drun,window,ssh -show combi -modi combi"
 bindsym $mod+q kill
 
-bindsym $mod+Ctrl+p exec pavucontrol
+# bindsym $mod+Ctrl+p exec pavucontrol
 bindsym $mod+Ctrl+b exec gnome-terminal -e 'bmenu'
 bindsym $mod+Print --release exec --no-startup-id flameshot gui
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id pa-applet
+exec --no-startup-id start-pulseaudio-x11
 exec --no-startup-id nitrogen --restore; sleep 1; compton -b
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 exec --no-startup-id blueman-applet
 exec --no-startup-id xautolock -time 10 -locker blurlock
-# exec --no-startup-id volumeicon
-#exec --no-startup-id pulseaudio
-#exec --no-startup-id pa-applet
+exec --no-startup-id dropbox
+exec --no-startup-id overDrive
+exec --no-startup-id caffeine
+exec --no-startup-id slack
+exec --no-startup-id whatsdesk
+exec --no-startup-id spotify
+exec --no-startup-id emacs
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id /usr/bin/setxkbmap -option 'caps:ctrl_modifier'
+exec_always --no-startup-id /usr/bin/xcape -e 'Caps_Lock=Escape'
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 
@@ -63,10 +72,10 @@ bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 bindsym $mod+z split toggle
 bindsym $mod+Shift+space floating toggle
@@ -116,31 +125,28 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # Open applications on specific workspaces
-# assign [class="Thunderbird"] $ws1
 assign [class="Emacs"] $ws1
 assign [class="Vivaldi"] $ws2
 assign [class="Terminal"] $ws3
-assign [class="Slack"] $ws4
-assign [class="Zoom"] $ws7
-assign [class="Spotify"] $ws9
-# assign [class="Cisco Anyconnect Secure Mobility Client"] $ws9
+assign [class="Zoom"] $ws8
+assign [class="Skype"] $ws8
+assign [class="Slack"] $ws9
+assign [class="whatsdesk"] $ws9
+assign [class="spotify"] $ws10
 
 # Open specific applications in floating mode
-for_window [title="alsamixer"] floating enable border pixel 1
 for_window [class="calamares"] floating enable border normal
 for_window [title="File Transfer*"] floating enable
 for_window [class="Galculator"] floating enable border pixel 1
 for_window [class="GParted"] floating enable border normal
 for_window [class="Lightdm-settings"] floating enable
 for_window [class="Lxappearance"] floating enable sticky enable border normal
-for_window [class="Manjaro-hello"] floating enable
 for_window [class="Manjaro Settings Manager"] floating enable border normal
 for_window [title="MuseScore: Play Panel"] floating enable
 for_window [class="Nitrogen"] floating enable sticky enable border normal
 for_window [class="Oblogout"] fullscreen enable
 for_window [class="octopi"] floating enable
 for_window [class="Pamac-manager"] floating enable
-for_window [class="Pavucontrol"] floating enable
 for_window [class="qt5ct"] floating enable sticky enable border normal
 for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
 for_window [class="Simple-scan"] floating enable border normal
@@ -149,7 +155,6 @@ for_window [class="Skype"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="SimpleScreenRecorder"] floating enable border normal
 for_window [class="MPlayer"] floating enable
-# for_window [class="Spotify"] floating enable 
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -160,6 +165,16 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+# Media player controls
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Set shut down, restart and locking features
 bindsym $mod+Ctrl+Delete mode "$mode_system"
@@ -191,7 +206,7 @@ mode "resize" {
 }
 
 # Lock screen
-bindsym $mod+Shift+l exec --no-startup-id blurlock
+bindsym $mod+Shift+x exec --no-startup-id blurlock
 
 
 # Color palette used for the terminal ( ~/.Xresources file )
@@ -224,37 +239,6 @@ set_from_resource $term_color12    color12
 set_from_resource $term_color13    color13
 set_from_resource $term_color14    color14
 set_from_resource $term_color15    color15
-
-# Start i3bar 
-bar {
-	i3bar_command i3bar
-	status_command i3blocks
-	position top
-
-      # please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-	# tray_output primary
-	# tray_output eDP1
-
-	bindsym button4 nop
-	bindsym button5 nop
-	strip_workspace_numbers yes
-
-    colors {
-        background #222D31
-        statusline #F9FAF9
-        separator  #454947
-
-        #                  border  backgr  text
-        focused_workspace  #F9FAF9 #16a085 #292F34
-        active_workspace   #595B5B #353836 #FDF6E3
-        inactive_workspace #595B5B #222D31 #EEE8D5
-        binding_mode       #16a085 #2C2C2C #F9FAF9
-        urgent_workspace   #16a085 #FDF6E3 #E5201D
-    }
-}
-
-# hide/unhide i3bar
-bindsym $mod+m bar mode toggle
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
