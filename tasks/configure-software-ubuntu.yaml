@@ -7,10 +7,8 @@
   package:
     name: [
         'gnome-terminal',
-        'ranger'
     ]
     state: present
-
 - name: Package Installation - Development Tools
   package:
     name: [
@@ -30,7 +28,9 @@
         'offlineimap',
         'pandoc',
         'php',
-        'vagrant'
+        'pass',
+        'vagrant',
+        'mu4e',
     ]
     state: present
 
@@ -48,6 +48,20 @@
         'rofi',
         'nitrogen',
         'dunst',
-        'i3blocks'
+        'i3blocks',
+        'compton',
     ]
     state: present
+
+- name: Install snap packages
+  snap:
+    name: [
+      'slack',
+      'zoom-client',
+      'spotify',
+      'postman',
+      'skype',
+      'odrive-unofficial',
+      'whatsdesk',
+    ]
+    classic: yes
