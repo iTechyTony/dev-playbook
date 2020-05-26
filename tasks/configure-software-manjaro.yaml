@@ -26,7 +26,9 @@
         'pandoc',
         'php',
         'texlive-bin',
-        'vagrant'
+        'vagrant',
+        'compton',
+        'polybar',
     ]
     state: present
 
@@ -35,6 +37,18 @@
     name: [
         'flameshot',
         'imagemagick'
+    ]
+    state: present
+
+- name: Package Installation - Volume Control
+  package:
+    name: [
+        'manjaro-pulse',
+        'pavucontrol',
+        'pulseaudio',
+        'pulseaudio-alsa',
+        'pulseaudio-bluetooth',
+        'pulseaudio-equalizer',
     ]
     state: present
 
