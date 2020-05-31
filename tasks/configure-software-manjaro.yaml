@@ -3,6 +3,25 @@
     update_cache: true
   changed_when: false
 
+- name: Package Installation - Window Manager Tools
+  package:
+    name: [
+        'bspwm',
+        'compton',
+        'manjaro-pulse',
+        'nitrogen',
+        'pavucontrol',
+        'playerctl',
+        'polybar',
+        'pulseaudio',
+        'pulseaudio-alsa',
+        'pulseaudio-bluetooth',
+        'pulseaudio-equalizer',
+        'rofi',
+        'sxhkd',
+    ]
+    state: present
+
 - name: Package Installation - Development Tools
   package:
     name: [
@@ -27,8 +46,6 @@
         'php',
         'texlive-bin',
         'vagrant',
-        'compton',
-        'polybar',
     ]
     state: present
 
@@ -37,28 +54,5 @@
     name: [
         'flameshot',
         'imagemagick'
-    ]
-    state: present
-
-- name: Package Installation - Volume Control
-  package:
-    name: [
-        'manjaro-pulse',
-        'pavucontrol',
-        'pulseaudio',
-        'pulseaudio-alsa',
-        'pulseaudio-bluetooth',
-        'pulseaudio-equalizer',
-    ]
-    state: present
-
-- name: Package Installation - System Desktop
-  package:
-    name: [
-        'rofi',
-        'nitrogen',
-        'dunst',
-        'i3blocks',
-        'playerctl',
     ]
     state: present
