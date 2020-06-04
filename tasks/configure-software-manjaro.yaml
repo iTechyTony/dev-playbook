@@ -56,3 +56,10 @@
         'imagemagick'
     ]
     state: present
+
+- name: Package Installation - File Manager
+  package:
+    name: [
+        'pcmanfm',
+    ]
+    state: present
