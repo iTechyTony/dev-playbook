@@ -20,6 +20,7 @@ dotfiles_files:
   - .config/polybar
   - .config/rofi
   - .config/sxhkd
+  - .config/compton
   - .emacs.d
   - .gitconfig
   - .gitignore_global
