@@ -46,6 +46,8 @@
         'php',
         'texlive-bin',
         'vagrant',
+        'ripgrep',
+        'dnsutils',
     ]
     state: present
 
@@ -61,5 +63,12 @@
   package:
     name: [
         'pcmanfm',
+    ]
+    state: present
+
+- name: Package Installation - Keyboard Modifier Tools
+  package:
+    name: [
+        'xcape',
     ]
     state: present
