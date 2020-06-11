@@ -43,11 +43,25 @@
         'npm',
         'offlineimap',
         'pandoc',
-        'php',
         'texlive-bin',
         'vagrant',
         'ripgrep',
         'dnsutils',
+    ]
+    state: present
+
+- name: Package Installation - PHP
+  package:
+    name: [
+        'php',
+        'php-gd',
+    ]
+    state: present
+
+- name: Package Installation - Mysql
+  package:
+    name: [
+        'mysql',
     ]
     state: present
 
@@ -59,6 +73,13 @@
     ]
     state: present
 
+- name: Package Installation - Web Browser
+  package:
+    name: [
+        'qutebrowser',
+    ]
+    state: present
+
 - name: Package Installation - File Manager
   package:
     name: [
@@ -66,9 +87,11 @@
     ]
     state: present
 
-- name: Package Installation - Keyboard Modifier Tools
+- name: Package Installation - Keyboard and Mouse Tools
   package:
     name: [
         'xcape',
+        'xorg-xsetroot',
+        'screenkey',
     ]
     state: present
