@@ -1,0 +1,10 @@
+* Manage your email account with Emacs with Mu4e
+** mu
+   Install yaourt -S mu
+   #+BEGIN_SRC sh
+   yaourt -S mu
+   #+END_SRC
+** Launch
+   #+BEGIN_SRC sh
+   mu init index --maildir=~/Maildir
+   #+END_SRC
