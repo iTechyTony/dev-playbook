@@ -14,19 +14,22 @@ dotfiles_repo: https://github.com/iTechyTony/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/Repo/Personal/2Areas/dotfiles
 dotfiles_files:
+  - .Xresources
   - .config/bspwm
+  - .config/compton.conf
   - .config/dunst
   - .config/fish
   - .config/polybar
   - .config/rofi
   - .config/sxhkd
-  - .config/compton.conf
+  - .config/qutebrowser
   - .emacs.d
   - .gitconfig
   - .gitignore_global
   - .offlineimaprc
   - .php-cs-fixer
   - .tmux.conf
+  - .xprofile
 
 
 # Install packages from other package managers.
