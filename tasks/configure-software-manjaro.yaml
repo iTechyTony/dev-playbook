@@ -6,7 +6,8 @@
 - name: Package Installation - Window Manager Tools
   package:
     name: [
-        'bspwm',
+        'i3',
+        'i3lock',
         'compton',
         'manjaro-pulse',
         'nitrogen',
@@ -18,7 +19,6 @@
         'pulseaudio-bluetooth',
         'pulseaudio-equalizer',
         'rofi',
-        'sxhkd',
     ]
     state: present
 
