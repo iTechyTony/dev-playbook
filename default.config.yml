@@ -8,20 +8,19 @@ configure_osx: no
 
 pass_repo: https://github.com/iTechyTony/password-store.git
 pass_repo_accept_hostkey: yes
-pass_repo_local_destination: ~/Repo/2Areas/Personal/password-store
+pass_repo_local_destination: ~/Repo/Personal/2Areas/password-store
 
 dotfiles_repo: https://github.com/iTechyTony/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/Repo/Personal/2Areas/dotfiles
 dotfiles_files:
   - .Xresources
-  - .config/bspwm
+  - .config/i3
   - .config/compton.conf
   - .config/dunst
   - .config/fish
   - .config/polybar
   - .config/rofi
-  - .config/sxhkd
   - .config/qutebrowser
   - .emacs.d
   - .gitconfig
