@@ -18,7 +18,6 @@
         'pulseaudio-alsa',
         'pulseaudio-bluetooth',
         'pulseaudio-equalizer',
-        'rofi',
     ]
     state: present
 
@@ -92,6 +91,15 @@
   package:
     name: [
         'dunst',
+    ]
+    state: present
+
+- name: Package Installation - Application Launcher Rofi
+  package:
+    name: [
+        'rofi',
+        'rofi-pass',
+        'rofi-calc',
     ]
     state: present
 
