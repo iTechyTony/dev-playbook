@@ -111,3 +111,10 @@
         'screenkey',
     ]
     state: present
+
+- name: Package Installation - Syncthing File Sync
+  package:
+    name: [
+        'syncthing',
+    ]
+    state: present

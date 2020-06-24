@@ -2,25 +2,21 @@
 - hosts: all
   connection: local
   become: true
-
   vars_files:
     - default.config.yml
-
   pre_tasks:
     - include_vars: "{{ item }}"
       with_fileglob:
         - "{{ playbook_dir }}/config.yml"
       tags: ['always']
-
   roles:
     - role: geerlingguy.dotfiles
       when: configure_dotfiles
       tags: ['dotfiles']
-
   tasks:
     - include_tasks: tasks/configure-software-manjaro.yaml
-
+      tags: ['manjaro-install']
     - include_tasks: tasks/extra-packages.yml
       tags: ['extra-packages']
-
     - include_tasks: tasks/pass-repo-clonning.yml
+      tags: ['pass']
