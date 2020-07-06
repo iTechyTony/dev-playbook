@@ -15,3 +15,6 @@
 - aur: name=ttf-mac-fonts
   become: yes
   become_user: tonyampomah
+- aur: name=whatsapp-nativefier-dark
+  become: yes
+  become_user: tonyampomah

@@ -176,3 +176,17 @@
         'ttf-ubuntu-font-family',
     ]
     state: present
+
+- name: Install JetBrains Mono Font for coding
+  package:
+    name: [
+        'ttf-jetbrains-mono',
+    ]
+    state: present
+
+- name: Install noto-fonts for reading books
+  package:
+    name: [
+        'noto-fonts',
+    ]
+    state: present
