@@ -6,18 +6,59 @@
 - name: Package Installation - Window Manager Tools
   package:
     name: [
-        'i3',
-        'i3lock',
         'compton',
         'manjaro-pulse',
-        'nitrogen',
+        'polybar',
+        'xorg-xkill', # force quit apps
+    ]
+    state: present
+
+- name: Package Installation - BSPWM Window Manager
+  package:
+    name: [
+        'bspwm',
+    ]
+    state: present
+
+- name: Package Installation - Keyboard Daemon
+  package:
+    name: [
+        'sxhkd',
+    ]
+    state: present
+
+- name: Package Installation - Sound Tools
+  package:
+    name: [
         'pavucontrol',
         'playerctl',
-        'polybar',
         'pulseaudio',
         'pulseaudio-alsa',
         'pulseaudio-bluetooth',
         'pulseaudio-equalizer',
+    ]
+    state: present
+
+- name: Package Installation - Wallpaper Manager
+  package:
+    name: [
+        'nitrogen',
+    ]
+    state: present
+
+- name: Package Installation - Network Manager Tools
+  package:
+    name: [
+      'networkmanager',
+      'network-manager-applet',
+      'nm-connection-editor',
+    ]
+    state: present
+
+- name: Package Installation - Power Manager
+  package:
+    name: [
+      'xfce4-power-manager',
     ]
     state: present
 
@@ -54,6 +95,7 @@
     name: [
         'php',
         'php-gd',
+        'xdebug',
     ]
     state: present
 

@@ -15,11 +15,13 @@ dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/Repo/Personal/2Areas/dotfiles
 dotfiles_files:
   - .Xresources
-  - .config/alacritty/alacritty.yml
+  - .config/alacritty
   - .config/compton.conf
   - .config/dunst
+  - .config/sxhkd
   - .config/fish
   - .config/i3
+  - .config/bspwm
   - .config/polybar
   - .config/qutebrowser
   - .config/rofi
