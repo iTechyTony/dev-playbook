@@ -169,3 +169,10 @@
         'signal-desktop',
     ]
     state: present
+
+- name: Install Ubuntu Fonts
+  package:
+    name: [
+        'ttf-ubuntu-font-family',
+    ]
+    state: present
