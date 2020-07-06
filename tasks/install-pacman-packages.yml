@@ -3,31 +3,28 @@
     update_cache: true
   changed_when: false
 
-- name: Package Installation - Window Manager Tools
-  package:
-    name: [
-        'compton',
-        'manjaro-pulse',
-        'polybar',
-        'xorg-xkill', # force quit apps
-    ]
-    state: present
-
-- name: Package Installation - BSPWM Window Manager
+- name: Install BSPWM Window Manager
   package:
     name: [
         'bspwm',
     ]
     state: present
 
-- name: Package Installation - Keyboard Daemon
+- name: Install Keyboard Daemon
   package:
     name: [
         'sxhkd',
     ]
     state: present
 
-- name: Package Installation - Sound Tools
+- name: Install Compton Compositor
+  package:
+    name: [
+        'compton',
+    ]
+    state: present
+
+- name: Install Sound Tools
   package:
     name: [
         'pavucontrol',
@@ -39,14 +36,14 @@
     ]
     state: present
 
-- name: Package Installation - Wallpaper Manager
+- name: Install Nitrogen Wallpaper Manager
   package:
     name: [
         'nitrogen',
     ]
     state: present
 
-- name: Package Installation - Network Manager Tools
+- name: Install Network Managing Tools
   package:
     name: [
       'networkmanager',
@@ -55,14 +52,14 @@
     ]
     state: present
 
-- name: Package Installation - Power Manager
+- name: Install Power Manager
   package:
     name: [
       'xfce4-power-manager',
     ]
     state: present
 
-- name: Package Installation - Development Tools
+- name: Install Development Tools
   package:
     name: [
         'aspell',
@@ -74,7 +71,6 @@
         'docker',
         'docker-compose',
         'editorconfig-core-c',
-        'emacs',
         'fish',
         'gnome-terminal',
         'htop',
@@ -90,7 +86,7 @@
     ]
     state: present
 
-- name: Package Installation - PHP
+- name: Install php and extensions
   package:
     name: [
         'php',
@@ -99,14 +95,14 @@
     ]
     state: present
 
-- name: Package Installation - Mysql
+- name: Install mysql
   package:
     name: [
         'mysql',
     ]
     state: present
 
-- name: Package Installation - Media
+- name: Package Installation - Screenshot
   package:
     name: [
         'flameshot',
@@ -114,29 +110,28 @@
     ]
     state: present
 
-- name: Package Installation - Web Browser
+- name: Install qutebrowser
   package:
     name: [
         'qutebrowser',
-        'surfraw',
     ]
     state: present
 
-- name: Package Installation - File Manager
+- name: Install GUI file manager
   package:
     name: [
         'pcmanfm',
     ]
     state: present
 
-- name: Package Installation - Notification
+- name: Install dunst notification
   package:
     name: [
         'dunst',
     ]
     state: present
 
-- name: Package Installation - Application Launcher Rofi
+- name: Install rofi, pass and calc
   package:
     name: [
         'rofi',
@@ -154,9 +149,23 @@
     ]
     state: present
 
-- name: Package Installation - Syncthing File Sync
+- name: Install nextcloud
   package:
     name: [
-        'syncthing',
+        'nextcloud-client',
+    ]
+    state: present
+
+- name: Install calibre for reading books
+  package:
+    name: [
+        'calibre',
+    ]
+    state: present
+
+- name: Install signal
+  package:
+    name: [
+        'signal-desktop',
     ]
     state: present

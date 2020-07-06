@@ -1,0 +1,28 @@
+- name: Install slack
+  snap:
+    name: slack
+    classic: yes
+
+- name: Install postman
+  snap:
+    name: postman
+    classic: yes
+
+- name: Install insomnia
+  snap:
+    name: insomnia
+    classic: yes
+
+- name: Install zoom-client
+  snap:
+    name: zoom-client
+    classic: yes
+
+- name: Install woe-usb for creating bootable usb
+  snap:
+    name: woe-usb
+    channel: latest/edge
+
+- name: Install joplin for note taking
+  snap:
+    name: joplin-james-carroll

@@ -1,0 +1,10 @@
+- aur: name=balena-etcher
+- aur: name=google-chrome
+- aur: name=mu
+- aur: name=stoplight-studio-appimage
+- aur: name=tableplus
+# - aur: name=spotify
+# Install package_name using the first known helper found
+- aur: name=spotify
+  become: yes
+  become_user: tonyampomah
