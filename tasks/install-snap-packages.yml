@@ -3,11 +3,6 @@
     name: slack
     classic: yes
 
-- name: Install postman
-  snap:
-    name: postman
-    classic: yes
-
 - name: Install insomnia
   snap:
     name: insomnia
