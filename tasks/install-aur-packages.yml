@@ -24,3 +24,6 @@
 - aur: name=slack-desktop
   become: yes
   become_user: tonyampomah
+- aur: name=skypeforlinux-stable-bin
+  become: yes
+  become_user: tonyampomah
