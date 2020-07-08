@@ -191,3 +191,13 @@
         'noto-fonts',
     ]
     state: present
+
+
+- name: Install valet requirements
+  package:
+    name: [
+        'nss',
+        'jq',
+        'xsel',
+    ]
+    state: present

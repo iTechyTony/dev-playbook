@@ -40,8 +40,6 @@ dotfiles_files:
 composer_packages:
   - name: laravel/installer
     state: present
-  - name: laravel/valet
-    state: present
   - name: laravel/lumen-installer
     state: present
   - name: phpunit/phpunit
@@ -60,6 +58,11 @@ composer_packages:
     state: present
   - name: friendsofphp/php-cs-fixer
     state: present
+  - name: cpriego/valet-linux
+    state: present
+  # - name: laravel/valet
+  #   state: present
+
 
 
 gem_packages: []
