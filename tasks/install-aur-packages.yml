@@ -27,3 +27,9 @@
 - aur: name=skypeforlinux-stable-bin
   become: yes
   become_user: tonyampomah
+- aur: name=chromedriver
+  become: yes
+  become_user: tonyampomah
+- aur: name=insomnia
+  become: yes
+  become_user: tonyampomah

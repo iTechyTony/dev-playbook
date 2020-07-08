@@ -1,8 +1,3 @@
-- name: Install insomnia
-  snap:
-    name: insomnia
-    classic: yes
-
 - name: Install zoom-client
   snap:
     name: zoom-client
