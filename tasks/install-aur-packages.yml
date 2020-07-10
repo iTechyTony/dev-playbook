@@ -1,8 +1,18 @@
 - aur: name=balena-etcher
+  become: yes
+  become_user: tonyampomah
 - aur: name=google-chrome
+  become: yes
+  become_user: tonyampomah
 - aur: name=mu
+  become: yes
+  become_user: tonyampomah
 - aur: name=stoplight-studio-appimage
+  become: yes
+  become_user: tonyampomah
 - aur: name=tableplus
+  become: yes
+  become_user: tonyampomah
 - aur: name=spotify
   become: yes
   become_user: tonyampomah
@@ -31,5 +41,8 @@
   become: yes
   become_user: tonyampomah
 - aur: name=insomnia
+  become: yes
+  become_user: tonyampomah
+- aur: name=php-codesniffer
   become: yes
   become_user: tonyampomah
