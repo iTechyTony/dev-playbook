@@ -3,6 +3,13 @@
     update_cache: true
   changed_when: false
 
+- name: Install build dev tools
+  package:
+    name: [
+        'base-devel',
+    ]
+    state: present
+
 - name: Install Compton Compositor
   package:
     name: [
@@ -192,5 +199,12 @@
   package:
     name: [
         'mpc',
+    ]
+    state: present
+
+- name: Install fish terminal
+  package:
+    name: [
+        'fish',
     ]
     state: present
