@@ -46,3 +46,6 @@
 - aur: name=php-codesniffer
   become: yes
   become_user: tonyampomah
+- aur: name=wego
+  become: yes
+  become_user: tonyampomah

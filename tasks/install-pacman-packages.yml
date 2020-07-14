@@ -3,20 +3,6 @@
     update_cache: true
   changed_when: false
 
-- name: Install BSPWM Window Manager
-  package:
-    name: [
-        'bspwm',
-    ]
-    state: present
-
-- name: Install Keyboard Daemon
-  package:
-    name: [
-        'sxhkd',
-    ]
-    state: present
-
 - name: Install Compton Compositor
   package:
     name: [
@@ -199,5 +185,12 @@
         'nss',
         'jq',
         'xsel',
+    ]
+    state: present
+
+- name: Install mpc music player
+  package:
+    name: [
+        'mpc',
     ]
     state: present
