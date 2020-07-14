@@ -1,51 +1,122 @@
-- aur: name=balena-etcher
+- user:
+    name: aur_builder
+    group: wheel
+- lineinfile:
+    path: /etc/sudoers.d/11-install-aur_builder
+    line: 'aur_builder ALL=(ALL) NOPASSWD: /usr/bin/pacman'
+    create: yes
+    validate: 'visudo -cf %s'
+
+- name: Install balena etcher
+  aur:
+    name: balena-etcher
   become: yes
-  become_user: tonyampomah
-- aur: name=google-chrome
+  become_user: aur_builder
+
+- name: Install google chrome
+  aur:
+    name: google-chrome
   become: yes
-  become_user: tonyampomah
-- aur: name=mu
+  become_user: aur_builder
+
+- name: Install mu for emacs mail client
+  aur:
+    name: mu
   become: yes
-  become_user: tonyampomah
-- aur: name=stoplight-studio-appimage
+  become_user: aur_builder
+  
+- name: Install stoplight studio
+  aur:
+    name: stoplight-studio-appimage
   become: yes
-  become_user: tonyampomah
-- aur: name=tableplus
+  become_user: aur_builder
+
+- name: Install tableplus
+  aur:
+    name: tableplus
   become: yes
-  become_user: tonyampomah
-- aur: name=spotify
+  become_user: aur_builder
+
+- name: Install spotify
+  aur:
+    name: spotify
+    skip_pgp_check: yes
   become: yes
-  become_user: tonyampomah
-- aur: name=ttf-win10
+  become_user: aur_builder
+
+- name: Install ttf-windows
+  aur:
+    name: ttf-windows
   become: yes
-  become_user: tonyampomah
-- aur: name=ttf-windows
+  become_user: aur_builder
+
+- name: Install ttf-mac-fonts
+  aur:
+    name: ttf-mac-fonts
   become: yes
-  become_user: tonyampomah
-- aur: name=ttf-mac-fonts
+  become_user: aur_builder
+
+- name: Install Whatsapp
+  aur:
+    name: whatsapp-nativefier-dark
   become: yes
-  become_user: tonyampomah
-- aur: name=whatsapp-nativefier-dark
+  become_user: aur_builder
+
+- name: Install postman
+  aur:
+    name: postman-bin
   become: yes
-  become_user: tonyampomah
-- aur: name=postman-bin
+  become_user: aur_builder
+
+- name: Install slack desktop client
+  aur:
+    name: slack-desktop
   become: yes
-  become_user: tonyampomah
-- aur: name=slack-desktop
+  become_user: aur_builder
+
+- name: Install skype for linux
+  aur:
+    name: skypeforlinux-stable-bin
   become: yes
-  become_user: tonyampomah
-- aur: name=skypeforlinux-stable-bin
+  become_user: aur_builder
+
+- name: Install insomnia
+  aur:
+    name: chromedriver
   become: yes
-  become_user: tonyampomah
-- aur: name=chromedriver
+  become_user: aur_builder
+
+- name: Install insomnia
+  aur:
+    name: insomnia
   become: yes
-  become_user: tonyampomah
-- aur: name=insomnia
+  become_user: aur_builder
+
+- name: Install php-codesniffer
+  aur:
+    name: php-codesniffer
+    skip_pgp_check: yes
   become: yes
-  become_user: tonyampomah
-- aur: name=php-codesniffer
+  become_user: aur_builder
+
+- name: Install wego
+  aur:
+    name: wego
   become: yes
-  become_user: tonyampomah
-- aur: name=wego
+  become_user: aur_builder
+
+- name: Install zoom
+  aur:
+    name: zoom
   become: yes
-  become_user: tonyampomah
+  become_user: aur_builder
+
+- name: Install woe-usb for creating bootable usb
+  aur:
+    name: woeusb-git
+  become_user: aur_builder
+
+- name: Install joplin for note taking
+  aur:
+    name: joplin
+  become_user: aur_builder
