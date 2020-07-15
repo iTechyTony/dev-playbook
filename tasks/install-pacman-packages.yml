@@ -171,6 +171,13 @@
     ]
     state: present
 
+- name: Install Joypixels font
+  package:
+    name: [
+        'ttf-joypixels',
+    ]
+    state: present
+
 - name: Install JetBrains Mono Font for coding
   package:
     name: [

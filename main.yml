@@ -24,5 +24,3 @@
       tags: ['extra-packages']
     - include: tasks/pass-repo-clonning.yml
       tags: ['pass']
-    - include: tasks/install-snap-packages.yml
-      tags: ['install-snap-packages']

@@ -120,3 +120,9 @@
   aur:
     name: joplin
   become_user: aur_builder
+
+- name: Install libxft-bgra
+  aur:
+    name: libxft-bgra
+  become_user: aur_builder
+  become: yes
