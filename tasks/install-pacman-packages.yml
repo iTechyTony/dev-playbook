@@ -215,3 +215,10 @@
         'fish',
     ]
     state: present
+
+- name: Install sysstat for cpu info
+  package:
+    name: [
+        'sysstat',
+    ]
+    state: present
