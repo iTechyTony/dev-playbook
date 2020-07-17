@@ -229,3 +229,10 @@
         'kdeconnect',
     ]
     state: present
+
+- name: Install adobe-source-sans-pro-fonts
+  package:
+    name: [
+        'adobe-source-sans-pro-fonts',
+    ]
+    state: present
