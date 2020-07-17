@@ -24,3 +24,5 @@
       tags: ['extra-packages']
     - include: tasks/pass-repo-clonning.yml
       tags: ['pass']
+    - include: tasks/configure-user.yaml
+      tags: ['configure-user']

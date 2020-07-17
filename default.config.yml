@@ -5,6 +5,7 @@ configure_dotfiles: yes
 configure_sudoers: yes
 configure_terminal: no
 configure_osx: no
+username: tonyampomah
 
 pass_repo: git@github.com:iTechyTony/password-store.git
 pass_repo_accept_hostkey: yes
