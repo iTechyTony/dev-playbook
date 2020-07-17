@@ -222,3 +222,10 @@
         'sysstat',
     ]
     state: present
+
+- name: Install kdeconnect for phone
+  package:
+    name: [
+        'kdeconnect',
+    ]
+    state: present
