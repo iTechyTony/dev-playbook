@@ -17,12 +17,9 @@ dotfiles_repo_local_destination: ~/Repo/Personal/2Areas/dotfiles
 dotfiles_files:
   - .Xresources
   - .config/alacritty
-  - .config/compton.conf
   - .config/dunst
-  - .config/sxhkd
+  - .config/picom.conf
   - .config/fish
-  - .config/i3
-  - .config/bspwm
   - .config/polybar
   - .config/qutebrowser
   - .config/rofi
@@ -33,6 +30,8 @@ dotfiles_files:
   - .php-cs-fixer
   - .tmux.conf
   - .xprofile
+  - .xmonad
+  - .xmobarrc
 
 
 # Install packages from other package managers.
@@ -61,9 +60,6 @@ composer_packages:
     state: present
   - name: cpriego/valet-linux
     state: present
-  # - name: laravel/valet
-  #   state: present
-
 
 
 gem_packages: []

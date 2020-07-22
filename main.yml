@@ -13,16 +13,13 @@
     - role: geerlingguy.dotfiles
       when: configure_dotfiles
       tags: ['dotfiles']
-  roles:
-  - kewlfft.aur
+    - role: kewlfft.aur
   tasks:
+    - include: tasks/configure-user.yaml
+      tags: ['configure-user']
     - include: tasks/install-pacman-packages.yml
       tags: ['install-pacman-packages']
     - include: tasks/install-aur-packages.yml
       tags: ['install-aur-packages']
     - include: tasks/extra-packages.yml
       tags: ['extra-packages']
-    - include: tasks/pass-repo-clonning.yml
-      tags: ['pass']
-    - include: tasks/configure-user.yaml
-      tags: ['configure-user']
