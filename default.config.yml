@@ -9,11 +9,11 @@ username: tonyampomah
 
 pass_repo: git@github.com:iTechyTony/password-store.git
 pass_repo_accept_hostkey: yes
-pass_repo_local_destination: ~/Repo/Personal/2Areas/password-store
+pass_repo_local_destination: ~/Repo/2Areas/password-store
 
 dotfiles_repo: git@github.com:iTechyTony/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/Repo/Personal/2Areas/dotfiles
+dotfiles_repo_local_destination: ~/Repo/2Areas/dotfiles
 dotfiles_files:
   - .Xresources
   - .config/alacritty
@@ -29,7 +29,6 @@ dotfiles_files:
   - .offlineimaprc
   - .php-cs-fixer
   - .tmux.conf
-  - .xprofile
   - .xmonad
   - .xmobarrc
 
