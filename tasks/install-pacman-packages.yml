@@ -62,6 +62,13 @@
     ]
     state: present
 
+- name: Install Bluetooth manager
+  package:
+    name: [
+      'blueman',
+    ]
+    state: present
+
 - name: Install Development Tools
   package:
     name: [
