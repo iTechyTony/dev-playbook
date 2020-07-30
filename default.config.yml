@@ -18,11 +18,12 @@ dotfiles_files:
   - .Xresources
   - .config/alacritty
   - .config/dunst
-  - .config/picom.conf
   - .config/fish
+  - .config/picom.conf
   - .config/polybar
   - .config/qutebrowser
   - .config/rofi
+  - .config/xmobar
   - .emacs.d
   - .gitconfig
   - .gitignore_global
@@ -30,7 +31,6 @@ dotfiles_files:
   - .php-cs-fixer
   - .tmux.conf
   - .xmonad
-  - .xmobarrc
 
 
 # Install packages from other package managers.
