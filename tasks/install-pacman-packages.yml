@@ -180,35 +180,6 @@
     ]
     state: present
 
-- name: Install Ubuntu Fonts
-  package:
-    name: [
-        'ttf-ubuntu-font-family',
-    ]
-    state: present
-
-- name: Install Joypixels font
-  package:
-    name: [
-        'ttf-joypixels',
-    ]
-    state: present
-
-- name: Install JetBrains Mono Font for coding
-  package:
-    name: [
-        'ttf-jetbrains-mono',
-    ]
-    state: present
-
-- name: Install noto-fonts for reading books
-  package:
-    name: [
-        'noto-fonts',
-    ]
-    state: present
-
-
 - name: Install valet requirements
   package:
     name: [
@@ -246,9 +217,21 @@
     ]
     state: present
 
-- name: Install adobe-source-sans-pro-fonts
+- name: Install fonts
   package:
     name: [
         'adobe-source-sans-pro-fonts',
+        'ttf-ubuntu-font-family',
+        'noto-fonts',
+        'ttf-jetbrains-mono',
+        'ttf-joypixels',
+        'ttf-fira-code',
+    ]
+    state: present
+
+- name: Install cmatrix
+  package:
+    name: [
+        'cmatrix',
     ]
     state: present
