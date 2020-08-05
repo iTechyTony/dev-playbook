@@ -120,10 +120,11 @@
     ]
     state: present
 
-- name: Install qutebrowser
+- name: Install browser
   package:
     name: [
         'qutebrowser',
+        'brave'
     ]
     state: present
 
