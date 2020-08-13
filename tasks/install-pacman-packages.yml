@@ -72,8 +72,6 @@
 - name: Install Development Tools
   package:
     name: [
-        'aspell',
-        'aspell-en',
         'binutils',
         'cmake',
         'composer',
@@ -82,17 +80,25 @@
         'docker-compose',
         'editorconfig-core-c',
         'fish',
-        'gnome-terminal',
         'htop',
-        'languagetool',
-        'ledger',
         'npm',
         'offlineimap',
-        'pandoc',
-        'texlive-bin',
         'vagrant',
-        'ripgrep',
         'dnsutils',
+    ]
+    state: present
+
+- name: Install Emacs & Packages
+  package:
+    name: [
+        'emacs',
+        'aspell',
+        'aspell-en',
+        'languagetool',
+        'ledger',
+        'pandoc',
+        'ripgrep',
+        'texlive-most',
     ]
     state: present
 
