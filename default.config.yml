@@ -23,7 +23,6 @@ dotfiles_files:
   - .config/polybar
   - .config/qutebrowser
   - .config/rofi
-  - .config/xmobar
   - .emacs.d
   - .gitconfig
   - .gitignore_global
