@@ -242,3 +242,10 @@
         'cmatrix',
     ]
     state: present
+
+- name: Install android file transfer
+  package:
+    name: [
+        'android-file-transfer',
+    ]
+    state: present
