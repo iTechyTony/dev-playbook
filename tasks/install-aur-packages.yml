@@ -114,12 +114,6 @@
     name: woeusb-git
   become_user: aur_builder
 
-- name: Install libxft-bgra
-  aur:
-    name: libxft-bgra
-  become_user: aur_builder
-  become: yes
-
 - name: Install adobe-source-sans-pro-fonts
   aur:
     name: adobe-source-sans-pro-fonts
