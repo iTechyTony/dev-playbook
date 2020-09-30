@@ -79,7 +79,7 @@
   become: yes
   become_user: aur_builder
 
-- name: Install insomnia
+- name: Install chrome driver for development
   aur:
     name: chromedriver
   become: yes
