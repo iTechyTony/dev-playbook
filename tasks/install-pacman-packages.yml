@@ -40,6 +40,13 @@
     ]
     state: present
 
+- name: Install alacritty terminal
+  package:
+    name: [
+        'alacritty',
+    ]
+    state: present
+
 - name: Install Compton Compositor
   package:
     name: [
