@@ -26,6 +26,20 @@
     ]
     state: present
 
+- name: Install xorg-xbacklight to control screen brightness
+  package:
+    name: [
+        'xorg-xbacklight',
+    ]
+    state: present
+
+- name: Install xorg-xkill to force quit apps
+  package:
+    name: [
+        'xorg-xkill',
+    ]
+    state: present
+
 - name: Install Compton Compositor
   package:
     name: [
