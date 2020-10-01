@@ -17,7 +17,6 @@ dotfiles_repo_local_destination: ~/Repo/2Areas/dotfiles
 dotfiles_files:
   - .Xresources
   - .config/alacritty
-  - .config/dunst
   - .config/fish
   - .config/picom.conf
   - .config/polybar
