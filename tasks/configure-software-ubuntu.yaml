@@ -1,0 +1,249 @@
+- name: Package Installation - Update Apt package cache
+  apt:
+    update_cache: true
+  changed_when: false
+
+- name: Install dwm
+  package:
+    name: [
+        'dwm',
+    ]
+    state: present
+
+- name: Install xbacklight to control screen brightness
+  package:
+    name: [
+        'xbacklight',
+    ]
+    state: present
+
+- name: Install xkill to force quit apps
+  package:
+    name: [
+        'x11-utils',
+    ]
+    state: present
+
+- name: Install Compton Compositor
+  package:
+    name: [
+        'compton',
+    ]
+    state: present
+
+- name: Install Sound Tools
+  package:
+    name: [
+        'pavucontrol',
+        'playerctl',
+        'pulseaudio',
+    ]
+    state: present
+
+- name: Install Nitrogen Wallpaper Manager
+  package:
+    name: [
+        'nitrogen',
+    ]
+    state: present
+
+- name: Install Network Managing Tools
+  package:
+    name: [
+      'network-manager',
+    ]
+    state: present
+
+- name: Install Power Manager
+  package:
+    name: [
+      'xfce4-power-manager',
+    ]
+    state: present
+
+- name: Install Development Tools
+  package:
+    name: [
+        'binutils',
+        'cmake',
+        'composer',
+        # 'dbeaver',
+        'docker',
+        'docker-compose',
+        'fish',
+        'htop',
+        'npm',
+        'offlineimap',
+        'vagrant',
+        'dnsutils',
+    ]
+    state: present
+
+- name: Install Emacs & Packages
+  package:
+    name: [
+        'emacs',
+        'aspell',
+        'aspell-en',
+        # 'languagetool',
+        'ledger',
+        'pandoc',
+        'ripgrep',
+        # 'texlive-most',
+    ]
+    state: present
+
+- name: Install php and extensions
+  package:
+    name: [
+        'php',
+        'php-gd',
+        'php-xdebug',
+    ]
+    state: present
+
+- name: Install mariadb-server
+  package:
+    name: [
+        'mariadb-server',
+    ]
+    state: present
+
+- name: Package Installation - Screenshot
+  package:
+    name: [
+        'flameshot',
+        'imagemagick'
+    ]
+    state: present
+
+- name: Install browser
+  package:
+    name: [
+        'qutebrowser',
+    ]
+    state: present
+
+- name: Install GUI file manager
+  package:
+    name: [
+        'pcmanfm',
+    ]
+    state: present
+
+- name: Install dunst notification
+  package:
+    name: [
+        'dunst',
+    ]
+    state: present
+
+- name: Install rofi, pass and calc
+  package:
+    name: [
+        'rofi',
+        # 'rofi-pass',
+        # 'rofi-calc',
+    ]
+    state: present
+
+- name: Package Installation - Keyboard and Mouse Tools
+  package:
+    name: [
+        'xcape',
+        'x11-xserver-utils',
+        'screenkey',
+    ]
+    state: present
+
+- name: Install nextcloud
+  package:
+    name: [
+        'nextcloud-desktop',
+    ]
+    state: present
+
+- name: Install calibre for reading books
+  package:
+    name: [
+        'calibre',
+    ]
+    state: present
+
+- name: Install mpc music player
+  package:
+    name: [
+        'mpc',
+    ]
+    state: present
+
+- name: Install fish terminal
+  package:
+    name: [
+        'fish',
+    ]
+    state: present
+
+- name: Install sysstat for cpu info
+  package:
+    name: [
+        'sysstat',
+    ]
+    state: present
+
+- name: Install kdeconnect for phone
+  package:
+    name: [
+        'kdeconnect',
+    ]
+    state: present
+
+- name: Install fonts
+  package:
+    name: [
+        'ttf-ubuntu-font-family',
+        'fonts-noto',
+        # 'ttf-jetbrains-mono',
+        'fonts-firacode',
+        'fonts-cascadia-code',
+    ]
+    state: present
+
+- name: Install cmatrix
+  package:
+    name: [
+        'cmatrix',
+    ]
+    state: present
+
+- name: Install android file transfer
+  package:
+    name: [
+        'android-file-transfer',
+    ]
+    state: present
+
+- name: Install zathura for reading pdfs
+  package:
+    name: [
+        'zathura',
+        'zathura-djvu',
+        'zathura-pdf-poppler',
+        'zathura-ps',
+        'zathura-cb',
+    ]
+    state: present
+
+- name: Install caffeine
+  package:
+    name: [
+        'caffeine',
+    ]
+    state: present
+
+- name: Install arandr
+  package:
+    name: [
+        'arandr',
+    ]
+    state: present

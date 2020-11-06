@@ -5,7 +5,7 @@ configure_dotfiles: yes
 configure_sudoers: yes
 configure_terminal: no
 configure_osx: no
-username: tonyampomah
+username: tonya
 
 pass_repo: git@github.com:iTechyTony/password-store.git
 pass_repo_accept_hostkey: yes
@@ -15,20 +15,20 @@ dotfiles_repo: git@github.com:iTechyTony/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/Repo/2Areas/dotfiles
 dotfiles_files:
-  - .Xresources
-  - .config/alacritty
-  - .config/fish
-  - .config/picom.conf
-  - .config/polybar
-  - .config/qutebrowser
-  - .config/rofi
-  - .emacs.d
-  - .gitconfig
-  - .gitignore_global
-  - .offlineimaprc
-  - .php-cs-fixer
-  - .tmux.conf
-  - .xmonad
+  - Xresources
+  - config/alacritty
+  - config/fish
+  - config/picom.conf
+  - config/polybar
+  - config/qutebrowser
+  - config/rofi
+  - emacs.d
+  - gitconfig
+  - gitignore_global
+  - offlineimaprc
+  - php-cs-fixer
+  - tmux.conf
+  - xmonad
 
 
 # Install packages from other package managers.

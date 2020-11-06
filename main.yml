@@ -23,3 +23,7 @@
       tags: ['install-aur-packages']
     - include: tasks/extra-packages.yml
       tags: ['extra-packages']
+    - include: tasks/configure-software-ubuntu.yaml
+      tags: ['configure-software-ubuntu']
+    - include: tasks/install-snaps.yml
+      tags: ['install-snaps']

@@ -1,0 +1,37 @@
+---
+- name: Install zoom
+  community.general.snap:
+    name: zoom-client
+
+- name: Install spotify
+  community.general.snap:
+    name: spotify
+
+- name: Install whatsapp client
+  community.general.snap:
+    name: whatsdesk
+
+- name: Install postman
+  community.general.snap:
+    name: postman
+
+- name: Install slack
+  community.general.snap:
+    name: slack
+    classic: yes
+
+- name: Install insomnia
+  community.general.snap:
+    name: insomnia
+
+- name: Install insomnia-designer
+  community.general.snap:
+    name: insomnia-designer
+
+- name: Install signal-desktop
+  community.general.snap:
+    name: signal-desktop
+
+- name: Install dbeaver
+  community.general.snap:
+    name: dbeaver
