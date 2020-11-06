@@ -14,8 +14,7 @@
   package:
     name: [
         'xmonad',
-        'xmonad-contrib',
-        'xmobar',
+        'libghc-xmonad-contrib-dev',
     ]
     state: present
 
@@ -261,6 +260,8 @@
         'ttf-jetbrains-mono',
         'ttf-joypixels',
         'ttf-fira-code',
+        'ttf-cascadia-code',
+        'otf-cascadia-code',
     ]
     state: present
 
@@ -275,5 +276,22 @@
   package:
     name: [
         'android-file-transfer',
+    ]
+    state: present
+
+- name: Install zathura for reading pdfs
+  package:
+    name: [
+        'zathura',
+        'zathura-djvu',
+        'zathura-pdf-mupdf',
+        'zathura-ps',
+    ]
+    state: present
+
+- name: Install caffeine
+  package:
+    name: [
+        'caffeine',
     ]
     state: present

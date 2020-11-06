@@ -7,12 +7,6 @@
     create: yes
     validate: 'visudo -cf %s'
 
-- name: Install balena etcher
-  aur:
-    name: balena-etcher
-  become: yes
-  become_user: aur_builder
-
 - name: Install google chrome
   aur:
     name: google-chrome
@@ -79,21 +73,9 @@
   become: yes
   become_user: aur_builder
 
-- name: Install chrome driver for development
-  aur:
-    name: chromedriver
-  become: yes
-  become_user: aur_builder
-
 - name: Install insomnia
   aur:
     name: insomnia
-  become: yes
-  become_user: aur_builder
-
-- name: Install php-codesniffer
-  aur:
-    name: php-codesniffer
   become: yes
   become_user: aur_builder
 
@@ -109,13 +91,31 @@
   become: yes
   become_user: aur_builder
 
-- name: Install woe-usb for creating bootable usb
-  aur:
-    name: woeusb-git
-  become_user: aur_builder
-
 - name: Install adobe-source-sans-pro-fonts
   aur:
     name: adobe-source-sans-pro-fonts
   become_user: aur_builder
   become: yes
+
+- name: Install image optim
+  aur:
+    name: image_optim
+  become_user: aur_builder
+  become: yes
+
+- name: Install balena etcher
+  aur:
+    name: balena-etcher
+  become: yes
+  become_user: aur_builder
+
+- name: Install woe-usb for creating bootable usb
+  aur:
+    name: woeusb-git
+  become_user: aur_builder
+
+- name: Install php-codesniffer
+  aur:
+    name: php-codesniffer
+  become: yes
+  become_user: aur_builder
