@@ -1,0 +1,30 @@
+---
+- hosts: all
+  connection: local
+  become: true
+  vars_files:
+    - default.config.yml
+  pre_tasks:
+    - include_vars: "{{ item }}"
+      with_fileglob:
+        - "{{ playbook_dir }}/config.yml"
+      tags: ['always']
+  roles:
+    - role: kewlfft.aur
+  tasks:
+    - include: tasks/configure-user.yaml
+      tags: ['configure-user']
+    - include: tasks/arch/fonts.yaml
+      tags: ['fonts']
+    - include: tasks/arch/emacs.yaml
+      tags: ['emacs']
+    - include: tasks/arch/dev-tools.yaml
+      tags: ['dev-tools']
+    - include: tasks/arch/terminal.yaml
+      tags: ['terminal']
+    - include: tasks/arch/window-manager.yaml
+      tags: ['window-manager']
+    - include: tasks/arch/general.yaml
+      tags: ['general']
+    - include: tasks/extra-packages.yml
+      tags: ['extra-packages']

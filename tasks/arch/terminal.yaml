@@ -1,0 +1,9 @@
+- name: Install alacritty
+  package:
+    name: alacritty
+    state: present
+
+- name: Install fish shell
+  package:
+    name: fish
+    state: present

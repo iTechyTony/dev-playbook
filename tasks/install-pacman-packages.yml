@@ -3,295 +3,39 @@
     update_cache: true
   changed_when: false
 
-- name: Install build dev tools
-  package:
-    name: [
-        'base-devel',
-    ]
-    state: present
+# - name: Install mpc music player
+#   package:
+#     name: [
+#         'mpc',
+#     ]
+#     state: present
 
-- name: Install xmonad window manager
-  package:
-    name: [
-        'xmonad',
-        'libghc-xmonad-contrib-dev',
-    ]
-    state: present
+# - name: Install cmatrix
+#   package:
+#     name: [
+#         'cmatrix',
+#     ]
+#     state: present
 
-- name: Install polybar
-  package:
-    name: [
-        'polybar',
-    ]
-    state: present
+# - name: Install caffeine
+#   package:
+#     name: [
+#         'caffeine',
+#     ]
+#     state: present
 
-- name: Install xorg-xbacklight to control screen brightness
-  package:
-    name: [
-        'xorg-xbacklight',
-    ]
-    state: present
+# - name: Package Installation - Keyboard and Mouse Tools
+#   package:
+#     name: [
+#         'xcape',
+#         'xorg-xsetroot',
+#         'screenkey',
+#     ]
+#     state: present
 
-- name: Install xorg-xkill to force quit apps
-  package:
-    name: [
-        'xorg-xkill',
-    ]
-    state: present
-
-- name: Install alacritty terminal
-  package:
-    name: [
-        'alacritty',
-    ]
-    state: present
-
-- name: Install Compton Compositor
-  package:
-    name: [
-        'compton',
-    ]
-    state: present
-
-- name: Install Sound Tools
-  package:
-    name: [
-        'pavucontrol',
-        'playerctl',
-        'pulseaudio',
-        'pulseaudio-alsa',
-        'pulseaudio-bluetooth',
-        'pulseaudio-equalizer',
-        'pulseaudio-equalizer-ladspa',
-    ]
-    state: present
-
-- name: Install Nitrogen Wallpaper Manager
-  package:
-    name: [
-        'nitrogen',
-    ]
-    state: present
-
-- name: Install Network Managing Tools
-  package:
-    name: [
-      'networkmanager',
-      'network-manager-applet',
-      'nm-connection-editor',
-    ]
-    state: present
-
-- name: Install Power Manager
-  package:
-    name: [
-      'xfce4-power-manager',
-    ]
-    state: present
-
-- name: Install Bluetooth manager
-  package:
-    name: [
-      'blueman',
-    ]
-    state: present
-
-- name: Install Development Tools
-  package:
-    name: [
-        'binutils',
-        'cmake',
-        'composer',
-        'dbeaver',
-        'docker',
-        'docker-compose',
-        'editorconfig-core-c',
-        'fish',
-        'htop',
-        'npm',
-        'offlineimap',
-        'vagrant',
-        'dnsutils',
-    ]
-    state: present
-
-- name: Install Emacs & Packages
-  package:
-    name: [
-        'emacs',
-        'aspell',
-        'aspell-en',
-        'languagetool',
-        'ledger',
-        'pandoc',
-        'ripgrep',
-        'texlive-most',
-    ]
-    state: present
-
-- name: Install php and extensions
-  package:
-    name: [
-        'php',
-        'php-gd',
-        'xdebug',
-    ]
-    state: present
-
-- name: Install mysql
-  package:
-    name: [
-        'mysql',
-    ]
-    state: present
-
-- name: Package Installation - Screenshot
-  package:
-    name: [
-        'flameshot',
-        'imagemagick'
-    ]
-    state: present
-
-- name: Install browser
-  package:
-    name: [
-        'qutebrowser',
-        'brave'
-    ]
-    state: present
-
-- name: Install GUI file manager
-  package:
-    name: [
-        'pcmanfm',
-    ]
-    state: present
-
-- name: Install dunst notification
-  package:
-    name: [
-        'dunst',
-    ]
-    state: present
-
-- name: Install rofi, pass and calc
-  package:
-    name: [
-        'rofi',
-        'rofi-pass',
-        'rofi-calc',
-    ]
-    state: present
-
-- name: Package Installation - Keyboard and Mouse Tools
-  package:
-    name: [
-        'xcape',
-        'xorg-xsetroot',
-        'screenkey',
-    ]
-    state: present
-
-- name: Install nextcloud
-  package:
-    name: [
-        'nextcloud-client',
-    ]
-    state: present
-
-- name: Install calibre for reading books
-  package:
-    name: [
-        'calibre',
-    ]
-    state: present
-
-- name: Install signal
-  package:
-    name: [
-        'signal-desktop',
-    ]
-    state: present
-
-- name: Install valet requirements
-  package:
-    name: [
-        'nss',
-        'jq',
-        'xsel',
-    ]
-    state: present
-
-- name: Install mpc music player
-  package:
-    name: [
-        'mpc',
-    ]
-    state: present
-
-- name: Install fish terminal
-  package:
-    name: [
-        'fish',
-    ]
-    state: present
-
-- name: Install sysstat for cpu info
-  package:
-    name: [
-        'sysstat',
-    ]
-    state: present
-
-- name: Install kdeconnect for phone
-  package:
-    name: [
-        'kdeconnect',
-    ]
-    state: present
-
-- name: Install fonts
-  package:
-    name: [
-        'adobe-source-sans-pro-fonts',
-        'ttf-ubuntu-font-family',
-        'noto-fonts',
-        'ttf-jetbrains-mono',
-        'ttf-joypixels',
-        'ttf-fira-code',
-        'ttf-cascadia-code',
-        'otf-cascadia-code',
-    ]
-    state: present
-
-- name: Install cmatrix
-  package:
-    name: [
-        'cmatrix',
-    ]
-    state: present
-
-- name: Install android file transfer
-  package:
-    name: [
-        'android-file-transfer',
-    ]
-    state: present
-
-- name: Install zathura for reading pdfs
-  package:
-    name: [
-        'zathura',
-        'zathura-djvu',
-        'zathura-pdf-mupdf',
-        'zathura-ps',
-    ]
-    state: present
-
-- name: Install caffeine
-  package:
-    name: [
-        'caffeine',
-    ]
-    state: present
+# - name: Install sysstat for cpu info
+#   package:
+#     name: [
+#         'sysstat',
+#     ]
+#     state: present

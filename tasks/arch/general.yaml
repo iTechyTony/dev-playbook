@@ -1,0 +1,118 @@
+- name: Install nextcloud
+  package:
+    name: nextcloud-client
+    state: present
+
+- name: Install calibre for reading books
+  package:
+    name: calibre
+    state: present
+
+- name: Install signal
+  package:
+    name: signal-desktop
+    state: present
+
+- name: Install android file transfer
+  package:
+    name: android-file-transfer
+    state: present
+
+- name: Install qutebrowser
+  package:
+    name: qutebrowser
+    state: present
+
+- name: Install brave browser
+  package:
+    name: brave
+    state: present
+
+- name: Install kdeconnect for phone
+  package:
+    name: kdeconnect
+    state: present
+
+- name: Install zathura for reading pdfs
+  package:
+    name: [
+        'zathura',
+        'zathura-djvu',
+        'zathura-pdf-mupdf',
+        'zathura-ps',
+    ]
+    state: present
+
+- name: Install mpc music player
+  package:
+    name: mpc
+    state: present
+
+- name: Install cmatrix
+  package:
+    name: cmatrix
+    state: present
+
+- name: Install caffeine
+  package:
+    name: caffeine
+    state: present
+
+- name: Install google chrome
+  aur:
+    name: google-chrome
+  become: yes
+  become_user: tonya
+
+- name: Install spotify
+  aur:
+    name: spotify
+  become: yes
+  become_user: tonya
+
+- name: Install Whatsapp
+  aur:
+    name: whatsapp-nativefier-dark
+  become: yes
+  become_user: tonya
+
+- name: Install zoom
+  aur:
+    name: zoom
+  become: yes
+  become_user: tonya
+
+- name: Install skype for linux
+  aur:
+    name: skypeforlinux-stable-bin
+  become: yes
+  become_user: tonya
+
+- name: Install slack desktop client
+  aur:
+    name: slack-desktop
+  become: yes
+  become_user: tonya
+
+- name: Install wego
+  aur:
+    name: wego
+  become: yes
+  become_user: tonya
+
+- name: Install image optim
+  aur:
+    name: image_optim
+  become_user: tonya
+  become: yes
+
+- name: Install balena etcher
+  aur:
+    name: balena-etcher
+  become: yes
+  become_user: tonya
+
+- name: Install woe-usb for creating bootable usb
+  aur:
+    name: woeusb-git
+  become_user: tonya

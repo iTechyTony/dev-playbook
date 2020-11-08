@@ -1,0 +1,57 @@
+- name: Install emacs27
+  aur:
+    name: emacs27-git
+  become: yes
+  become_user: tonya
+
+- name: Install aspell for Emacs
+  package:
+    name: aspell
+    state: present
+
+- name: Install aspell-en for Emacs
+  package:
+    name: aspell-en
+    state: present
+
+- name: Install languagetool for Emacs
+  package:
+    name: languagetool
+    state: present
+
+- name: Install ledger for Emacs
+  package:
+    name: ledger
+    state: present
+
+- name: Install offlineimap for Emacs
+  package:
+    name: offlineimap
+    state: present
+
+- name: Install editorconfig-core-c for Emacs
+  package:
+    name: editorconfig-core-c
+    state: present
+
+- name: Install pandoc for Emacs
+  package:
+    name: pandoc
+    state: present
+
+- name: Install ripgrep for Emacs
+  package:
+    name: ripgrep
+    state: present
+
+- name: Install texlive-most for Emacs
+  package:
+    name: texlive-most
+    state: present
+
+- name: Install mu for emacs mail client
+  aur:
+    name: mu
+  become: yes
+  become_user: tonya
+  

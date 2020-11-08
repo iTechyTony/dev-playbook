@@ -1,0 +1,129 @@
+- name: Install xbacklight
+  package:
+    name: xorg-xbacklight
+    state: present
+
+- name: Install xkill
+  package:
+    name: xorg-xkill
+    state: present
+
+- name: Install Compton Compositor
+  package:
+    name: picom
+    state: present
+
+- name: Install pavucontrol
+  package:
+    name: pavucontrol
+    state: present
+
+- name: Install playerctl
+  package:
+    name: playerctl
+    state: present
+
+- name: Install pulseaudio
+  package:
+    name: pulseaudio
+    state: present
+
+- name: Install pulseaudio-alsa
+  package:
+    name: pulseaudio
+    state: present
+
+- name: Install pulseaudio-bluetooth
+  package:
+    name: pulseaudio-bluetooth
+    state: present
+
+- name: Install pulseaudio-equalizer
+  package:
+    name: pulseaudio-equalizer
+    state: present
+
+- name: Install pulseaudio-equalizer-ladspa
+  package:
+    name: pulseaudio-equalizer-ladspa
+    state: present
+    
+- name: Install nitrogen for managing wallpaper
+  package:
+    name: nitrogen
+    state: present
+
+- name: Install networkmanager
+  package:
+    name: networkmanager
+    state: present
+
+- name: Install network-manager-applet
+  package:
+    name: network-manager-applet
+    state: present
+
+- name: Install nm-connection-editor
+  package:
+    name: nm-connection-editor
+    state: present
+
+- name: Install xfce4-power-manager
+  package:
+    name: xfce4-power-manager
+    state: present
+
+- name: Install blueman bluetooth manager
+  package:
+    name: blueman
+    state: present
+
+- name: Install flameshot for screenshot
+  package:
+    name: flameshot
+    state: present
+
+- name: Install dunst notification
+  package:
+    name: dunst
+    state: present
+
+- name: Install rofi
+  package:
+    name: rofi
+    state: present
+
+- name: Install rofi-pass
+  package:
+    name: rofi-pass
+    state: present
+
+- name: Install rofi-calc
+  package:
+    name: rofi-calc
+    state: present
+
+- name: Install arandr
+  package:
+    name: arandr
+    state: present
+
+- name: Install sysstat for cpu info
+  package:
+    name: sysstat
+    state: present
+
+- name: Intall xcape
+  package:
+    name: xcape
+    state: present
+
+- name: Intall xorg-xsetroot
+  package:
+    name: xorg-xsetroot
+    state: present
+
+- name: Intall screenkey
+  package:
+    name: screenkey
+    state: present

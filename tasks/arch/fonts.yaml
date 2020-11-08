@@ -1,0 +1,46 @@
+- name: Install adobe-source-sans-pro-fonts
+  package:
+    name: adobe-source-sans-pro-fonts
+    state: present
+
+- name: Install noto-fonts
+  package:
+    name: noto-fonts
+    state: present
+
+- name: Install ttf-ubuntu-font-family
+  package:
+    name: ttf-ubuntu-font-family
+    state: present
+
+- name: Install ttf-jetbrains-mono
+  package:
+    name: ttf-jetbrains-mono
+    state: present
+
+- name: Install ttf-joypixels
+  package:
+    name: ttf-joypixels
+    state: present
+
+- name: Install ttf-fira-code
+  package:
+    name: ttf-fira-code
+    state: present
+
+- name: Install ttf-cascadia-code
+  package:
+    name: ttf-cascadia-code
+    state: present
+
+- name: Install ttf-windows
+  aur:
+    name: ttf-windows
+  become: yes
+  become_user: tonya
+
+- name: Install ttf-mac-fonts
+  aur:
+    name: ttf-mac-fonts
+  become: yes
+  become_user: tonya

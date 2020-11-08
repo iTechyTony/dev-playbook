@@ -11,7 +11,7 @@ pass_repo: git@github.com:iTechyTony/password-store.git
 pass_repo_accept_hostkey: yes
 pass_repo_local_destination: ~/Repo/2Areas/password-store
 
-dotfiles_repo: git@github.com:iTechyTony/dotfiles.git
+dotfiles_repo: https://github.com/iTechyTony/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/Repo/2Areas/dotfiles
 dotfiles_files:
@@ -28,7 +28,6 @@ dotfiles_files:
   - offlineimaprc
   - php-cs-fixer
   - tmux.conf
-  - xmonad
 
 
 # Install packages from other package managers.
