@@ -10,5 +10,6 @@
    #+END_SRC
 ** Add email addresses
    #+BEGIN_SRC sh
-mu init --my-address=tony@arksolutions.it --my-address=tony.ampomah@netsells.co.uk --my-address=tony.ampomah.jw@gmail.com
+mu init --my-address=tony@arksolutions.it --my-address=tony.ampomah.jw@gmail.com
    #+END_SRC
+   
