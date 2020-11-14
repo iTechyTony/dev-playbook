@@ -73,11 +73,6 @@
     name: xfce4-power-manager
     state: present
 
-- name: Install blueman bluetooth manager
-  package:
-    name: blueman
-    state: present
-
 - name: Install flameshot for screenshot
   package:
     name: flameshot
@@ -126,4 +121,9 @@
 - name: Intall screenkey
   package:
     name: screenkey
+    state: present
+
+- name: Intall blueberry for bluetooth
+  package:
+    name: blueberry
     state: present
