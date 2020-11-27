@@ -72,13 +72,7 @@
 
 - name: Install Whatsapp
   aur:
-    name: whatsapp-nativefier-dark
-  become: yes
-  become_user: tonya
-
-- name: Install zoom
-  aur:
-    name: zoom
+    name: whatsdesk-bin
   become: yes
   become_user: tonya
 
@@ -112,7 +106,3 @@
   become: yes
   become_user: tonya
 
-- name: Install woe-usb for creating bootable usb
-  aur:
-    name: woeusb-git
-  become_user: tonya

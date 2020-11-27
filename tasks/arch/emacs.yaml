@@ -1,8 +1,7 @@
-- name: Install emacs27
-  aur:
-    name: emacs27-git
-  become: yes
-  become_user: tonya
+- name: Install Emacs
+  package:
+    name: emacs
+    state: present
 
 - name: Install aspell for Emacs
   package:

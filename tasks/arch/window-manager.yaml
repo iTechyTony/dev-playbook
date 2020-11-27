@@ -38,16 +38,6 @@
     name: pulseaudio-bluetooth
     state: present
 
-- name: Install pulseaudio-equalizer
-  package:
-    name: pulseaudio-equalizer
-    state: present
-
-- name: Install pulseaudio-equalizer-ladspa
-  package:
-    name: pulseaudio-equalizer-ladspa
-    state: present
-    
 - name: Install nitrogen for managing wallpaper
   package:
     name: nitrogen
@@ -127,3 +117,14 @@
   package:
     name: blueberry
     state: present
+
+- name: Intall acpi
+  package:
+    name: acpi
+    state: present
+
+- name: Intall libxft-bgra
+  aur:
+    name: libxft-bgra
+  become: yes
+  become_user: tonya
