@@ -23,6 +23,16 @@
     name: playerctl
     state: present
 
+- name: Intall variety for managing wallpaper
+  package:
+    name: variety
+    state: present
+
+- name: Intall feh
+  package:
+    name: feh
+    state: present
+
 - name: Install pulseaudio
   package:
     name: pulseaudio
@@ -36,11 +46,6 @@
 - name: Install pulseaudio-bluetooth
   package:
     name: pulseaudio-bluetooth
-    state: present
-
-- name: Install nitrogen for managing wallpaper
-  package:
-    name: nitrogen
     state: present
 
 - name: Install networkmanager
@@ -123,8 +128,14 @@
     name: acpi
     state: present
 
+- name: Intall sxhkd
+  package:
+    name: sxhkd
+    state: present
+
 - name: Intall libxft-bgra
   aur:
     name: libxft-bgra
   become: yes
   become_user: tonya
+

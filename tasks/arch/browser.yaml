@@ -1,0 +1,21 @@
+- name: Install qutebrowser
+  package:
+    name: qutebrowser
+    state: present
+
+- name: Install chromium
+  aur:
+    name: chromium
+  become: yes
+  become_user: tonya
+
+- name: Install google chrome
+  aur:
+    name: google-chrome
+  become: yes
+  become_user: tonya
+
+- name: Install brave browser
+  package:
+    name: brave
+    state: present

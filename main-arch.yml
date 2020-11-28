@@ -10,6 +10,9 @@
         - "{{ playbook_dir }}/config.yml"
       tags: ['always']
   roles:
+    - role: geerlingguy.dotfiles
+      when: configure_dotfiles
+      tags: ['dotfiles']
     - role: kewlfft.aur
   tasks:
     - include: tasks/configure-user.yaml
@@ -26,5 +29,9 @@
       tags: ['window-manager']
     - include: tasks/arch/general.yaml
       tags: ['general']
-    - include: tasks/extra-packages.yml
-      tags: ['extra-packages']
+    - include: tasks/arch/chats.yaml
+      tags: ['chats']
+    - include: tasks/arch/browser.yaml
+      tags: ['browser']
+    # - include: tasks/extra-packages.yml
+    #   tags: ['extra-packages']

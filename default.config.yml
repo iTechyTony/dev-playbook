@@ -15,19 +15,24 @@ dotfiles_repo: https://github.com/iTechyTony/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/Repo/2Areas/dotfiles
 dotfiles_files:
-  - Xresources
-  - config/alacritty
-  - config/fish
-  - config/picom.conf
-  - config/polybar
-  - config/qutebrowser
-  - config/rofi
-  - emacs.d
-  - gitconfig
-  - gitignore_global
-  - offlineimaprc
-  - php-cs-fixer
-  - tmux.conf
+  - .config/alacritty
+  - .config/fish
+  - .config/picom
+  - .config/polybar
+  - .config/rofi
+  - .config/surfraw
+  - .config/sxhkd
+  - .config/systemd
+  - .config/zathura
+  - .config/dwm
+  - .local/bin
+  - .emacs.d
+  - .gitconfig
+  - .gitignore_global
+  - .offlineimaprc
+  - .php-cs-fixer
+  - .Xresources
+  - .profile
 
 
 # Install packages from other package managers.

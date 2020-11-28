@@ -17,7 +17,7 @@ This playbook installs and configures most of the software I use development.
       #+END_SRC
    4. Install and symlink dotfiles
       #+BEGIN_SRC sh
-      ansible-playbook main.yml -i inventory -K
+      ansible-playbook main-arch.yml -i inventory -K
       #+END_SRC
 ** macOs
    1. Ensure Apple's command line tools are installed using the command below to launch the installer.

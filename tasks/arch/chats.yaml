@@ -1,0 +1,28 @@
+- name: Install skype for linux
+  aur:
+    name: skypeforlinux-stable-bin
+  become: yes
+  become_user: tonya
+
+- name: Install slack desktop client
+  aur:
+    name: slack-desktop
+  become: yes
+  become_user: tonya
+
+- name: Install Whatsapp
+  aur:
+    name: whatsdesk-bin
+  become: yes
+  become_user: tonya
+
+- name: Install signal
+  package:
+    name: signal-desktop
+    state: present
+
+- name: Install Microsoft teams
+  aur:
+    name: teams
+  become: yes
+  become_user: tonya

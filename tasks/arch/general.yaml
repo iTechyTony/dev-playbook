@@ -8,24 +8,9 @@
     name: calibre
     state: present
 
-- name: Install signal
-  package:
-    name: signal-desktop
-    state: present
-
 - name: Install android file transfer
   package:
     name: android-file-transfer
-    state: present
-
-- name: Install qutebrowser
-  package:
-    name: qutebrowser
-    state: present
-
-- name: Install brave browser
-  package:
-    name: brave
     state: present
 
 - name: Install kdeconnect for phone
@@ -58,33 +43,9 @@
     name: caffeine
     state: present
 
-- name: Install google chrome
-  aur:
-    name: google-chrome
-  become: yes
-  become_user: tonya
-
 - name: Install spotify
   aur:
     name: spotify
-  become: yes
-  become_user: tonya
-
-- name: Install Whatsapp
-  aur:
-    name: whatsdesk-bin
-  become: yes
-  become_user: tonya
-
-- name: Install skype for linux
-  aur:
-    name: skypeforlinux-stable-bin
-  become: yes
-  become_user: tonya
-
-- name: Install slack desktop client
-  aur:
-    name: slack-desktop
   become: yes
   become_user: tonya
 
