@@ -67,3 +67,7 @@
   become: yes
   become_user: tonya
 
+- name: Install office suite
+  package:
+    name: onlyoffice
+    state: present

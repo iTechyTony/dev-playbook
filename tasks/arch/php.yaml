@@ -1,0 +1,34 @@
+- name: Install php
+  package:
+    name: php
+    state: present
+
+- name: Install php-gd
+  package:
+    name: php-gd
+    state: present
+
+- name: Install xdebug for php
+  package:
+    name: xdebug
+    state: present
+
+- name: Install composer
+  package:
+    name: composer
+    state: present
+
+- name: Laravel valet requirement - install jq
+  package:
+    name: jq
+    state: present
+
+- name: Laravel valet - install xsel
+  package:
+    name: xsel
+    state: present
+
+- name: Laravel valet - install nss
+  package:
+    name: nss
+    state: present

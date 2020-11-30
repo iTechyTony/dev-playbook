@@ -138,4 +138,3 @@
     name: libxft-bgra
   become: yes
   become_user: tonya
-

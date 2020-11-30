@@ -13,40 +13,11 @@
     name: [
         'binutils',
         'cmake',
-        'composer',
-        'dbeaver',
-        'docker',
-        'docker-compose',
         'htop',
         'npm',
         'vagrant',
         'dnsutils',
     ]
-    state: present
-
-- name: Install php
-  package:
-    name: php
-    state: present
-
-- name: Install php-gd
-  package:
-    name: php-gd
-    state: present
-
-- name: Install xdebug for php
-  package:
-    name: xdebug
-    state: present
-
-- name: Install mysql
-  package:
-    name: mysql
-    state: present
-
-- name: Laravel valet requirement - install jq
-  package:
-    name: mysql
     state: present
 
 - name: Install python2
@@ -58,38 +29,4 @@
   package:
     name: python-pip
     state: present
-
-- name: Laravel valet - install xsel
-  package:
-    name: xsel
-    state: present
-
-- name: Laravel valet - install nss
-  package:
-    name: nss
-    state: present
-
-- name: Install stoplight studio
-  aur:
-    name: stoplight-studio-appimage
-  become: yes
-  become_user: tonya
-
-- name: Install tableplus
-  aur:
-    name: tableplus
-  become: yes
-  become_user: tonya
-
-- name: Install postman
-  aur:
-    name: postman-bin
-  become: yes
-  become_user: tonya
-
-- name: Install insomnia
-  aur:
-    name: insomnia
-  become: yes
-  become_user: tonya
 

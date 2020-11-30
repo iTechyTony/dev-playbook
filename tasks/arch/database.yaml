@@ -1,0 +1,16 @@
+- name: Install mysql
+  package:
+    name: mysql
+    state: present
+
+- name: Install tableplus
+  aur:
+    name: tableplus
+  become: yes
+  become_user: tonya
+
+- name: Install dbeaver
+  aur:
+    name: dbeaver
+  become: yes
+  become_user: tonya
