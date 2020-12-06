@@ -71,3 +71,29 @@
   package:
     name: onlyoffice
     state: present
+
+- name: Install remote desktop client
+  package:
+    name: remmina
+    state: present
+
+- name: Install freerdp
+  package:
+    name: freerdp
+    state: present
+
+- name: Install remmina-plugin-rdesktop
+  aur:
+    name: remmina-plugin-rdesktop
+  become: yes
+  become_user: tonya
+
+- name: Install meld
+  package:
+    name: meld
+    state: present
+
+- name: Install vlc
+  package:
+    name: vlc
+    state: present
