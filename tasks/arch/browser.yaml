@@ -31,8 +31,14 @@
   become: yes
   become_user: tonya
 
-- name: Install browserpass
+- name: Install browserpass-chromium
   aur:
     name: browserpass-chromium
+  become: yes
+  become_user: tonya
+
+- name: Install browserpass-chrome
+  aur:
+    name: browserpass-chrome
   become: yes
   become_user: tonya
