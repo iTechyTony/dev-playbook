@@ -32,3 +32,20 @@
   package:
     name: nss
     state: present
+
+- name: Install php
+  package:
+    name: php-odbc
+    state: present
+
+- name: Install php-pear
+  aur:
+    name: php-pear
+  become: yes
+  become_user: tonya
+
+- name: PHP configuration file
+  template:
+    src: php.ini.j2
+    dest: /etc/php/php.ini
+  # notify: reload php-fpm

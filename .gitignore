@@ -1,5 +1,8 @@
 *.vagrant
 .DS_Store
 *.retry
-roles*
+
+roles/*
+!roles/itechytony.php
+
 config.yml

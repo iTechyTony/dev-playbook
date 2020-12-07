@@ -14,6 +14,8 @@
       when: configure_dotfiles
       tags: ['dotfiles']
     - role: kewlfft.aur
+    - role: itechytony.php
+      tags: ['php']
   tasks:
     - include: tasks/configure-user.yaml
       tags: ['configure-user']
@@ -37,11 +39,9 @@
       tags: ['printer']
     - include: tasks/arch/docker.yaml
       tags: ['docker']
-    - include: tasks/arch/php.yaml
-      tags: ['php']
     - include: tasks/arch/database.yaml
       tags: ['database']
     - include: tasks/arch/restclient.yaml
       tags: ['restclient']
-    # - include: tasks/extra-packages.yml
-    #   tags: ['extra-packages']
+    - include: tasks/extra-packages.yml
+      tags: ['extra-packages']
