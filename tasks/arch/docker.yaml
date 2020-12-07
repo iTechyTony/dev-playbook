@@ -14,7 +14,7 @@
     state: present
 
 - name: Give user permission
-  command: usermod -aG docker tonya
+  command: usermod -aG docker "{{username}}"
   become: yes
   become_user: root
 

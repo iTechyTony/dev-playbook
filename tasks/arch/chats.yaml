@@ -2,19 +2,19 @@
   aur:
     name: skypeforlinux-stable-bin
   become: yes
-  become_user: tonya
+  become_user: "{{username}}"
 
 - name: Install slack desktop client
   aur:
     name: slack-desktop
   become: yes
-  become_user: tonya
+  become_user: "{{username}}"
 
 - name: Install Whatsapp
   aur:
     name: whatsdesk-bin
   become: yes
-  become_user: tonya
+  become_user: "{{username}}"
 
 - name: Install signal
   package:
@@ -25,4 +25,4 @@
   aur:
     name: teams
   become: yes
-  become_user: tonya
+  become_user: "{{username}}"

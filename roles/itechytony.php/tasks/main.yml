@@ -42,7 +42,7 @@
   aur:
     name: php-pear
   become: yes
-  become_user: tonya
+  become_user: "{{username}}"
 
 - name: PHP configuration file
   template:

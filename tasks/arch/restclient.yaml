@@ -2,16 +2,16 @@
   aur:
     name: stoplight-studio-appimage
   become: yes
-  become_user: tonya
+  become_user: "{{username}}"
 
 - name: Install postman
   aur:
     name: postman-bin
   become: yes
-  become_user: tonya
+  become_user: "{{username}}"
 
 - name: Install insomnia
   aur:
     name: insomnia
   become: yes
-  become_user: tonya
+  become_user: "{{username}}"

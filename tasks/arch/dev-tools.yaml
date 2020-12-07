@@ -34,4 +34,4 @@
   aur:
     name: phpstorm
   become: yes
-  become_user: tonya
+  become_user: "{{username}}"

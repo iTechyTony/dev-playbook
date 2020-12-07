@@ -7,10 +7,10 @@
   aur:
     name: tableplus
   become: yes
-  become_user: tonya
+  become_user: "{{username}}"
 
 - name: Install dbeaver
   aur:
     name: dbeaver
   become: yes
-  become_user: tonya
+  become_user: "{{username}}"

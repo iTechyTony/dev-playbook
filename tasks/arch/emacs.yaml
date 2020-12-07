@@ -52,10 +52,7 @@
   aur:
     name: mu
   become: yes
-  become_user: tonya
+  become_user: "{{username}}"
 
 - name: Index email
   command: mu init index --maildir=~/Maildir
-
-- name: Add email address
-  command: mu init --my-address=tony@arksolutions.it --my-address=tony.ampomah.jw@gmail.com

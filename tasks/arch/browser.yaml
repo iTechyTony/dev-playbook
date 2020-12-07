@@ -12,13 +12,13 @@
   aur:
     name: chromium
   become: yes
-  become_user: tonya
+  become_user: "{{username}}"
 
 - name: Install google chrome
   aur:
     name: google-chrome
   become: yes
-  become_user: tonya
+  become_user: "{{username}}"
 
 - name: Install brave browser
   package:
@@ -29,16 +29,16 @@
   aur:
     name: browserpass
   become: yes
-  become_user: tonya
+  become_user: "{{username}}"
 
 - name: Install browserpass-chromium
   aur:
     name: browserpass-chromium
   become: yes
-  become_user: tonya
+  become_user: "{{username}}"
 
 - name: Install browserpass-chrome
   aur:
     name: browserpass-chrome
   become: yes
-  become_user: tonya
+  become_user: "{{username}}"

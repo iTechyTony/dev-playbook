@@ -47,25 +47,25 @@
   aur:
     name: spotify
   become: yes
-  become_user: tonya
+  become_user: "{{username}}"
 
 - name: Install wego
   aur:
     name: wego
   become: yes
-  become_user: tonya
+  become_user: "{{username}}"
 
 - name: Install image optim
   aur:
     name: image_optim
-  become_user: tonya
+  become_user: "{{username}}"
   become: yes
 
 - name: Install balena etcher
   aur:
     name: balena-etcher
   become: yes
-  become_user: tonya
+  become_user: "{{username}}"
 
 - name: Install office suite
   package:
@@ -86,7 +86,7 @@
   aur:
     name: remmina-plugin-rdesktop
   become: yes
-  become_user: tonya
+  become_user: "{{username}}"
 
 - name: Install meld
   package:
