@@ -97,3 +97,8 @@
   package:
     name: vlc
     state: present
+
+- name: Install yubico
+  package:
+    name: yubioath-desktop
+    state: present
