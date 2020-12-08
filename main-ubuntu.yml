@@ -1,0 +1,25 @@
+---
+- hosts: all
+  connection: local
+  become: true
+  vars_files:
+    - default.config.yml
+  pre_tasks:
+    - include_vars: "{{ item }}"
+      with_fileglob:
+        - "{{ playbook_dir }}/config.yml"
+      tags: ['always']
+  roles:
+    - role: geerlingguy.dotfiles
+      when: configure_dotfiles
+      tags: ['dotfiles']
+    - role: kewlfft.aur
+  tasks:
+    - include: tasks/configure-user.yaml
+      tags: ['configure-user']
+    - include: tasks/configure-software-ubuntu.yaml
+      tags: ['configure-software-ubuntu']
+    - include: tasks/install-snaps.yml
+      tags: ['install-snaps']
+    - include: tasks/extra-packages.yml
+      tags: ['extra-packages']
