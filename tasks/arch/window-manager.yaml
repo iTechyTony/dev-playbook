@@ -1,3 +1,13 @@
+- name: Install sway window manager
+  package:
+    name: sway
+    state: present
+
+- name: Install waybar
+  package:
+    name: waybar
+    state: present
+
 - name: Install xbacklight
   package:
     name: xorg-xbacklight
@@ -23,12 +33,12 @@
     name: playerctl
     state: present
 
-- name: Intall variety for managing wallpaper
+- name: Install variety for managing wallpaper
   package:
     name: variety
     state: present
 
-- name: Intall feh
+- name: Install feh
   package:
     name: feh
     state: present
@@ -103,38 +113,34 @@
     name: sysstat
     state: present
 
-- name: Intall xcape
+- name: Install xcape
   package:
     name: xcape
     state: present
 
-- name: Intall xorg-xsetroot
+- name: Install xorg-xsetroot
   package:
     name: xorg-xsetroot
     state: present
 
-- name: Intall screenkey
+- name: Install screenkey
   package:
     name: screenkey
     state: present
 
-- name: Intall blueberry for bluetooth
+- name: Install blueberry for bluetooth
   package:
     name: blueberry
     state: present
 
-- name: Intall acpi
+- name: Install acpi
   package:
     name: acpi
     state: present
 
-- name: Intall sxhkd
-  package:
-    name: sxhkd
-    state: present
-
-- name: Intall libxft-bgra
+- name: Install libxft-bgra
   aur:
     name: libxft-bgra
   become: yes
   become_user: "{{username}}"
+
