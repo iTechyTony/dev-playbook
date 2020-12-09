@@ -3,9 +3,24 @@
     name: sway
     state: present
 
-- name: Install waybar
+- name: Install sway waybar
   package:
     name: waybar
+    state: present
+
+- name: Install sway grim for taking screenshots
+  package:
+    name: grim
+    state: present
+
+- name: Install sway slurp for screenshots
+  package:
+    name: slurp
+    state: present
+
+- name: Install sway mako for notifications
+  package:
+    name: mako
     state: present
 
 - name: Install xbacklight
