@@ -49,3 +49,8 @@
     src: php.ini.j2
     dest: /etc/php/php.ini
   # notify: reload php-fpm
+
+- name: Install php-mongodb
+  package:
+    name: php-mongodb
+    state: present
