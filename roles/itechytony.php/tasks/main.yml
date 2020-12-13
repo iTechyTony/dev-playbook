@@ -54,3 +54,9 @@
   package:
     name: php-mongodb
     state: present
+
+- name: Install php-amqp
+  aur:
+    name: php-amqp
+  become: yes
+  become_user: "{{username}}"
