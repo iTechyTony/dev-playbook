@@ -23,6 +23,11 @@
     name: mako
     state: present
 
+- name: Install sway brightnessctl for controlling brightness
+  package:
+    name: brightnessctl
+    state: present
+
 - name: Install xbacklight
   package:
     name: xorg-xbacklight
