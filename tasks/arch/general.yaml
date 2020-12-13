@@ -102,3 +102,8 @@
   package:
     name: yubioath-desktop
     state: present
+
+- name: Install mpv
+  package:
+    name: mpv
+    state: present
