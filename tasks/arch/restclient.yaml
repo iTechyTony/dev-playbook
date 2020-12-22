@@ -12,6 +12,12 @@
 
 - name: Install insomnia
   aur:
-    name: insomnia
+    name: insomnia-bin
+  become: yes
+  become_user: "{{username}}"
+
+- name: Install insomnia-designer
+  aur:
+    name: insomnia-designer-bin
   become: yes
   become_user: "{{username}}"

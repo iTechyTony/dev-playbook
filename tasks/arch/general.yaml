@@ -107,3 +107,18 @@
   package:
     name: mpv
     state: present
+
+- name: Install zoom
+  package:
+    name: zoom
+    state: present
+
+- name: Install evolution
+  package:
+    name: evolution
+    state: present
+
+- name: Install evolution-ews
+  package:
+    name: evolution-ews
+    state: present
