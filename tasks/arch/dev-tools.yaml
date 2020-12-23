@@ -8,16 +8,39 @@
     name: base-devel
     state: present
 
-- name: Install Development Tools
+- name: Install binutils
   package:
-    name: [
-        'binutils',
-        'cmake',
-        'htop',
-        'npm',
-        'vagrant',
-        'dnsutils',
-    ]
+    name: binutils
+    state: present
+
+- name: Install cmake
+  package:
+    name: cmake
+    state: present
+
+- name: Install htop
+  package:
+    name: htop
+    state: present
+
+- name: Install npm
+  package:
+    name: npm
+    state: present
+
+- name: Install vagrant
+  package:
+    name: vagrant
+    state: present
+
+- name: Install virtualbox
+  package:
+    name: virtualbox
+    state: present
+
+- name: Install dnsutils
+  package:
+    name: dnsutils
     state: present
 
 - name: Install python2
