@@ -137,3 +137,8 @@
   package:
     name: copyq
     state: present
+
+- name: Install lastpass-cli
+  package:
+    name: lastpass-cli
+    state: present
