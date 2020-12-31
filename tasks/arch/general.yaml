@@ -38,11 +38,6 @@
     ]
     state: present
 
-- name: Install mpc music player
-  package:
-    name: mpc
-    state: present
-
 - name: Install cmatrix
   package:
     name: cmatrix
@@ -141,4 +136,14 @@
 - name: Install lastpass-cli
   package:
     name: lastpass-cli
+    state: present
+
+- name: Install mpd
+  package:
+    name: mpd
+    state: present
+
+- name: Install mpc
+  package:
+    name: mpc
     state: present
