@@ -132,3 +132,8 @@
   package:
     name: evolution-ews
     state: present
+
+- name: Install copyq
+  package:
+    name: copyq
+    state: present
