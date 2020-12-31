@@ -2,7 +2,7 @@
 
 This playbook installs and configures most of the software I use development.
 
-** Arch Linux
+* Arch Linux
    1. Install ansible
       #+BEGIN_SRC sh
       sudo pacman -S ansible
@@ -15,11 +15,13 @@ This playbook installs and configures most of the software I use development.
       #+BEGIN_SRC sh
       ansible-galaxy install -r requirements.yml
       #+END_SRC
-   4. Install and symlink dotfiles
-      #+BEGIN_SRC sh
-      ansible-playbook main-arch.yml -i inventory -K
+   4. Symlink dotfiles
+      #+BEGIN_SRC tmux
+        cd ~/Repo/Personal/2Areas/dev-playbook/
+        ansible-playbook main-arch.yml -i inventory
       #+END_SRC
-** macOs
+
+* macOs
    1. Ensure Apple's command line tools are installed using the command below to launch the installer.
       #+BEGIN_SRC shell
       xcode-select --install
