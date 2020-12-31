@@ -48,6 +48,11 @@
     name: texlive-most
     state: present
 
+- name: Install isync package for Emacs
+  package:
+    name: isync
+    state: present
+
 - name: Install mu for emacs mail client
   aur:
     name: mu
