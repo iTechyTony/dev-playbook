@@ -3,6 +3,16 @@
     name: nextcloud-client
     state: present
 
+- name: Install syncthing
+  package:
+    name: syncthing
+    state: present
+
+- name: Install syncthing-gtk
+  package:
+    name: syncthing-gtk
+    state: present
+
 - name: Install calibre for reading books
   package:
     name: calibre
