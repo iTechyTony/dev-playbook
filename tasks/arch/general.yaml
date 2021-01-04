@@ -147,3 +147,15 @@
   package:
     name: mpc
     state: present
+
+- name: Install wordnet
+  aur:
+    use: yay
+    name: wordnet-cli
+  become: yes
+  become_user: "{{username}}"
+
+- name: Install youtube-dl
+  package:
+    name: youtube-dl
+    state: present
