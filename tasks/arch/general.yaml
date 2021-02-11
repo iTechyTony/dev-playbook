@@ -28,14 +28,19 @@
     name: kdeconnect
     state: present
 
-- name: Install zathura for reading pdfs
+- name: Install zathura-djvu
   package:
-    name: [
-        'zathura',
-        'zathura-djvu',
-        'zathura-pdf-mupdf',
-        'zathura-ps',
-    ]
+    name: zathura-djvu
+    state: present
+
+- name: Install zathura-pdf-mupdf
+  package:
+    name: zathura-pdf-mupdf
+    state: present
+
+- name: Install zathura-ps
+  package:
+    name: zathura-ps
     state: present
 
 - name: Install cmatrix
