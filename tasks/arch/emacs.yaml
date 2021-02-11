@@ -23,11 +23,6 @@
     name: ledger
     state: present
 
-- name: Install offlineimap for Emacs
-  package:
-    name: offlineimap
-    state: present
-
 - name: Install editorconfig-core-c for Emacs
   package:
     name: editorconfig-core-c
