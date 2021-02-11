@@ -4,5 +4,6 @@
 
 roles/*
 !roles/itechytony.php
+!roles/itechytony.composer
 
 config.yml
