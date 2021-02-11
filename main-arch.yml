@@ -16,6 +16,8 @@
     - role: kewlfft.aur
     - role: itechytony.php
       tags: ['php']
+    - role: itechytony.composer
+      tags: ['composer']
   tasks:
     - include: tasks/configure-user.yaml
       tags: ['configure-user']
