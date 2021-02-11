@@ -1,7 +1,7 @@
 - name: Install alacritty
-  package:
-    name: alacritty
-    state: present
+  aur:
+    use: yay
+    name: alacritty-ligatures
 
 - name: Install fish shell
   package:

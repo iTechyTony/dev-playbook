@@ -5,12 +5,14 @@
 
 - name: Install tableplus
   aur:
+    use: yay
     name: tableplus
   become: yes
   become_user: "{{username}}"
 
 - name: Install dbeaver
   aur:
+    use: yay
     name: dbeaver
   become: yes
   become_user: "{{username}}"

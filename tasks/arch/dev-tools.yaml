@@ -55,6 +55,16 @@
 
 - name: Install phpstorm
   aur:
+    use: yay
     name: phpstorm
   become: yes
   become_user: "{{username}}"
+
+- name: Install jdk11-openjdk
+  package:
+    name: jdk11-openjdk
+    state: present
+
+- name: Install jdk11-openjdk
+  command: archlinux-java set java-11-openjdk
+  become: yes

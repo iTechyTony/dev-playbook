@@ -158,9 +158,9 @@
     name: acpi
     state: present
 
-- name: Install libxft-bgra
-  aur:
-    name: libxft-bgra
-  become: yes
-  become_user: "{{username}}"
-
+# - name: Install picom
+#   aur:
+#     use: yay
+#     name: picom-jonaburg-git
+#   become: yes
+#   become_user: "{{username}}"

@@ -3,11 +3,6 @@
     name: cups
     state: present
 
-- name: Install hplip
-  package:
-    name: hplip
-    state: present
-
 - name: Start service cups.service
   service:
     name: cups.service

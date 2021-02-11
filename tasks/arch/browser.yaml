@@ -10,12 +10,14 @@
 
 - name: Install chromium
   aur:
+    use: yay
     name: chromium
   become: yes
   become_user: "{{username}}"
 
 - name: Install google chrome
   aur:
+    use: yay
     name: google-chrome
   become: yes
   become_user: "{{username}}"
@@ -27,18 +29,14 @@
 
 - name: Install browserpass
   aur:
+    use: yay
     name: browserpass
   become: yes
   become_user: "{{username}}"
 
 - name: Install browserpass-chromium
   aur:
+    use: yay
     name: browserpass-chromium
-  become: yes
-  become_user: "{{username}}"
-
-- name: Install browserpass-chrome
-  aur:
-    name: browserpass-chrome
   become: yes
   become_user: "{{username}}"

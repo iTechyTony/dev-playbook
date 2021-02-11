@@ -1,23 +1,27 @@
 - name: Install stoplight studio
   aur:
+    use: yay
     name: stoplight-studio-appimage
   become: yes
   become_user: "{{username}}"
 
 - name: Install postman
   aur:
+    use: yay
     name: postman-bin
   become: yes
   become_user: "{{username}}"
 
 - name: Install insomnia
   aur:
+    use: yay
     name: insomnia-bin
   become: yes
   become_user: "{{username}}"
 
 - name: Install insomnia-designer
   aur:
+    use: yay
     name: insomnia-designer-bin
   become: yes
   become_user: "{{username}}"

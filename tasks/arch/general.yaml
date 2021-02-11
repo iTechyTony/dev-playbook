@@ -48,34 +48,26 @@
     name: caffeine
     state: present
 
-- name: Install spotify
-  aur:
-    name: spotify
-  become: yes
-  become_user: "{{username}}"
-
 - name: Install wego
   aur:
+    use: yay
     name: wego
   become: yes
   become_user: "{{username}}"
 
 - name: Install image optim
   aur:
+    use: yay
     name: image_optim
   become_user: "{{username}}"
   become: yes
 
 - name: Install balena etcher
   aur:
+    use: yay
     name: balena-etcher
   become: yes
   become_user: "{{username}}"
-
-- name: Install office suite
-  package:
-    name: onlyoffice
-    state: present
 
 - name: Install remote desktop client
   package:
@@ -89,6 +81,7 @@
 
 - name: Install remmina-plugin-rdesktop
   aur:
+    use: yay
     name: remmina-plugin-rdesktop
   become: yes
   become_user: "{{username}}"
@@ -158,4 +151,9 @@
 - name: Install youtube-dl
   package:
     name: youtube-dl
+    state: present
+
+- name: Install guvcview
+  package:
+    name: guvcview-qt
     state: present

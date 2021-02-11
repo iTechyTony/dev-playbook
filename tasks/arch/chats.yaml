@@ -1,17 +1,20 @@
 - name: Install skype for linux
   aur:
+    use: yay
     name: skypeforlinux-stable-bin
   become: yes
   become_user: "{{username}}"
 
 - name: Install slack desktop client
   aur:
+    use: yay
     name: slack-desktop
   become: yes
   become_user: "{{username}}"
 
 - name: Install Whatsapp
   aur:
+    use: yay
     name: whatsdesk-bin
   become: yes
   become_user: "{{username}}"
@@ -23,6 +26,7 @@
 
 - name: Install Microsoft teams
   aur:
+    use: yay
     name: teams
   become: yes
   become_user: "{{username}}"
