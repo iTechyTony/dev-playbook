@@ -23,7 +23,6 @@ dotfiles_files:
   - .config/surfraw
   - .config/systemd
   - .config/zathura
-  - .local/bin
   - .emacs.d
   - .gitconfig
   - .gitignore_global
