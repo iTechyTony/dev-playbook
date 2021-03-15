@@ -101,11 +101,6 @@
     name: vlc
     state: present
 
-- name: Install yubico
-  package:
-    name: yubioath-desktop
-    state: present
-
 - name: Install mpv
   package:
     name: mpv
@@ -129,11 +124,6 @@
 - name: Install copyq
   package:
     name: copyq
-    state: present
-
-- name: Install lastpass-cli
-  package:
-    name: lastpass-cli
     state: present
 
 - name: Install mpd
@@ -161,4 +151,9 @@
 - name: Install guvcview
   package:
     name: guvcview-qt
+    state: present
+
+- name: Install mplayer
+  package:
+    name: mplayer
     state: present
