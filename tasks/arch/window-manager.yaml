@@ -8,7 +8,7 @@
     name: waybar
     state: present
 
-- name: Install sway grim for taking screenshots
+- name: Install sway grim for taking screenshots on wayland
   package:
     name: grim
     state: present
@@ -23,9 +23,21 @@
     name: mako
     state: present
 
+- name: Install clipman for wayland
+  aur:
+    use: yay
+    name: clipman
+  become: yes
+  become_user: "{{username}}"
+
 - name: Install sway brightnessctl for controlling brightness
   package:
     name: brightnessctl
+    state: present
+
+- name: Install wofi for launching apps
+  package:
+    name: wofi
     state: present
 
 - name: Install xbacklight
@@ -98,11 +110,6 @@
     name: xfce4-power-manager
     state: present
 
-- name: Install flameshot for screenshot
-  package:
-    name: flameshot
-    state: present
-
 - name: Install dunst notification
   package:
     name: dunst
@@ -158,9 +165,14 @@
     name: acpi
     state: present
 
-# - name: Install picom
-#   aur:
-#     use: yay
-#     name: picom-jonaburg-git
-#   become: yes
-#   become_user: "{{username}}"
+- name: Install maim for screenshots
+  package:
+    name: maim
+    state: present
+
+- name: Install picom
+  aur:
+    use: yay
+    name: picom-jonaburg-git
+  become: yes
+  become_user: "{{username}}"
