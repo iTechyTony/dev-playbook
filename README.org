@@ -3,45 +3,45 @@
 This playbook installs and configures most of the software I use development.
 
 * Arch Linux
-   1. Install ansible
-      #+BEGIN_SRC sh
-      sudo pacman -S ansible
-      #+END_SRC
-   2. Clone this repo
-      #+BEGIN_SRC sh
-      git clone https://github.com/iTechyTony/dev-playbook.git
-      #+END_SRC
-   3. Install required ansible roles
-      #+BEGIN_SRC sh
-      ansible-galaxy install -r requirements.yml
-      #+END_SRC
-   4. Symlink dotfiles
-      #+BEGIN_SRC tmux
-        cd ~/Repo/Personal/2Areas/dev-playbook/
-        ansible-playbook main-arch.yml -i inventory
-      #+END_SRC
+1. Install ansible
+   #+BEGIN_SRC sh
+sudo pacman -S ansible
+   #+END_SRC
+2. Clone this repo
+   #+BEGIN_SRC sh
+git clone https://github.com/iTechyTony/dev-playbook.git
+   #+END_SRC
+3. Install required ansible roles
+   #+BEGIN_SRC sh
+ansible-galaxy install -r requirements.yml
+   #+END_SRC
+4. Symlink dotfiles
+   #+BEGIN_SRC tmux
+cd ~/Repo/Personal/2Areas/dev-playbook/
+ansible-playbook main-arch.yml -i inventory
+   #+END_SRC
 
 * macOs
-   1. Ensure Apple's command line tools are installed using the command below to launch the installer.
-      #+BEGIN_SRC shell
-      xcode-select --install
-      #+END_SRC
-   2. Install Ansible [[http://docs.ansible.com/intro_installation.html ]].
-      #+BEGIN_SRC sh
-      pip install --user ansible
-      #+END_SRC
-   3. Clone this repository to your local drive.
-      #+BEGIN_SRC shell
-      git clone https://github.com/iTechyTony/dev-playbook.git
-      #+END_SRC
-   4. Run command below inside this directory to install required Ansible roles.
-      #+BEGIN_SRC shell
-      ansible-galaxy install -r requirements.yml
-      #+END_SRC
-   5. Run the command below inside this directory. Enter your account password when prompted.
-      #+BEGIN_SRC shell
-      ansible-playbook main.yml -i inventory -K
-      #+END_SRC
+1. Ensure Apple's command line tools are installed using the command below to launch the installer.
+   #+BEGIN_SRC shell
+xcode-select --install
+   #+END_SRC
+2. Install Ansible [[http://docs.ansible.com/intro_installation.html ]].
+   #+BEGIN_SRC sh
+pip install --user ansible
+   #+END_SRC
+3. Clone this repository to your local drive.
+   #+BEGIN_SRC shell
+git clone https://github.com/iTechyTony/dev-playbook.git
+   #+END_SRC
+4. Run command below inside this directory to install required Ansible roles.
+   #+BEGIN_SRC shell
+ansible-galaxy install -r requirements.yml
+   #+END_SRC
+5. Run the command below inside this directory. Enter your account password when prompted.
+   #+BEGIN_SRC shell
+ansible-playbook main.yml -i inventory -K
+   #+END_SRC
 
-      *Note:* If some Homebrew commands fail, you might need to agree to Xcode's license or fix some other Brew issue. Run =brew doctor= to see if this is the case.
+   *Note:* If some Homebrew commands fail, you might need to agree to Xcode's license or fix some other Brew issue. Run =brew doctor= to see if this is the case.
 
