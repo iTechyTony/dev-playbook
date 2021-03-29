@@ -7,8 +7,3 @@
   package:
     name: fish
     state: present
-
-- name: Install termite
-  package:
-    name: termite
-    state: present
