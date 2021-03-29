@@ -1,0 +1,6 @@
+- name: Install linux-oled-headers
+  aur:
+    use: yay
+    name: linux-oled-headers
+  become: yes
+  become_user: "{{username}}"
