@@ -8,12 +8,10 @@
     name: qutebrowser
     state: present
 
-- name: Install chromium
-  aur:
-    use: yay
-    name: chromium
-  become: yes
-  become_user: "{{username}}"
+- name: Install firefox
+  package:
+    name: firefox
+    state: present
 
 - name: Install google chrome
   aur:
@@ -22,21 +20,14 @@
   become: yes
   become_user: "{{username}}"
 
+- name: Install browserpass-chrome
+  aur:
+    use: yay
+    name: browserpass-chrome
+  become: yes
+  become_user: "{{username}}"
+
 - name: Install brave browser
   package:
     name: brave
     state: present
-
-- name: Install browserpass
-  aur:
-    use: yay
-    name: browserpass
-  become: yes
-  become_user: "{{username}}"
-
-- name: Install browserpass-chromium
-  aur:
-    use: yay
-    name: browserpass-chromium
-  become: yes
-  become_user: "{{username}}"
