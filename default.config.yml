@@ -99,6 +99,8 @@ pip_packages:
   #   version: "0.16.3" # default: N/A
   - name: font-line
     state: present
+  - name: mitogen
+    state: present
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []
