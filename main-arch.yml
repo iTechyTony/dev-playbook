@@ -18,6 +18,8 @@
       tags: ['php']
     - role: itechytony.composer
       tags: ['composer']
+    - role: itechytony.security
+      tags: ['security']
   tasks:
     - include: tasks/configure-user.yaml
       tags: ['configure-user']
