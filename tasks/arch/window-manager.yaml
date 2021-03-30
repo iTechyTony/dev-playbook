@@ -176,3 +176,17 @@
     name: picom-jonaburg-git
   become: yes
   become_user: "{{username}}"
+
+- name: Install xvkbd
+  aur:
+    use: yay
+    name: xvkbd
+  become: yes
+  become_user: "{{username}}"
+
+- name: Install xbindkeys to bind keys
+  aur:
+    use: yay
+    name: xbindkeys
+  become: yes
+  become_user: "{{username}}"
