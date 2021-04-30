@@ -3,16 +3,6 @@
     name: nextcloud-client
     state: present
 
-- name: Install syncthing
-  package:
-    name: syncthing
-    state: present
-
-- name: Install syncthing-gtk
-  package:
-    name: syncthing-gtk
-    state: present
-
 - name: Install calibre for reading books
   package:
     name: calibre
@@ -46,11 +36,6 @@
 - name: Install cmatrix
   package:
     name: cmatrix
-    state: present
-
-- name: Install caffeine
-  package:
-    name: caffeine
     state: present
 
 - name: Install wego
@@ -91,16 +76,6 @@
   become: yes
   become_user: "{{username}}"
 
-- name: Install meld
-  package:
-    name: meld
-    state: present
-
-- name: Install vlc
-  package:
-    name: vlc
-    state: present
-
 - name: Install mpv
   package:
     name: mpv
@@ -109,21 +84,6 @@
 - name: Install zoom
   package:
     name: zoom
-    state: present
-
-- name: Install evolution
-  package:
-    name: evolution
-    state: present
-
-- name: Install evolution-ews
-  package:
-    name: evolution-ews
-    state: present
-
-- name: Install copyq
-  package:
-    name: copyq
     state: present
 
 - name: Install mpd
@@ -153,7 +113,37 @@
     name: guvcview-qt
     state: present
 
-- name: Install mplayer
+- name: Install audacity
   package:
-    name: mplayer
+    name: audacity
+    state: present
+
+- name: Install lmms
+  package:
+    name: lmms
+    state: present
+
+- name: Install freecad
+  package:
+    name: freecad
+    state: present
+
+- name: Install gimp
+  package:
+    name: gimp
+    state: present
+
+- name: Install blender
+  package:
+    name: blender
+    state: present
+
+- name: Install kdenlive
+  package:
+    name: kdenlive
+    state: present
+
+- name: Install libreoffice
+  package:
+    name: libreoffice-fresh
     state: present

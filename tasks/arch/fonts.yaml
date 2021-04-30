@@ -32,10 +32,3 @@
   package:
     name: ttf-cascadia-code
     state: present
-
-- name: Install lexend fonts
-  aur:
-    use: yay
-    name: lexend-fonts-git
-  become: yes
-  become_user: "{{username}}"

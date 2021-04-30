@@ -30,6 +30,13 @@
   become: yes
   become_user: "{{username}}"
 
+- name: Install redshift
+  aur:
+    use: yay
+    name: redshift-wayland-git
+  become: yes
+  become_user: "{{username}}"
+
 - name: Install sway brightnessctl for controlling brightness
   package:
     name: brightnessctl
